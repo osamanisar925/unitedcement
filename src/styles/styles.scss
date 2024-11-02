@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+@import "variables";
+
+@import 'bootstrap/scss/bootstrap';
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.fs-small {
+    font-size: 14px;
+}
+
+.fs-xsmall {
+    font-size: 12px;
+}
+
+.slider-section {
+    background-image: url('/slider-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    padding-block: 45px;
+
+    .clip {
+        overflow: hidden;
+        bottom: 0;
+    }
+
+    .center {
+        background-image: url('/Cement1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 413px;
+
+        .slick-slide {
+            height: 344px;
+        }
+    }
+
+    .slick-center {
+        img {
+            transform: scale(1.2) translateY(24px);
+            opacity: 1;
+        }
+
+        .cement-shadow {
+            transform: translateY(42px);
+        }
+    }
+
+    img {
+        opacity: 0.8;
+        transition: all 500ms ease;
+        transform: scale(0.9);
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 48px;
+        height: 48px;
+        z-index: 9;
+
+        &::before {
+            content: '' !important;
+            display: block;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .slick-prev:before {
+        background-image: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="%234054B2"/><path d="M26.5 31L20 25L26.5 18" stroke="white"/></svg>');
+    }
+
+    .slick-next:before {
+        background-image: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" transform="matrix(-1 0 0 1 48 0)" fill="%234054B2"/><path d="M21.5 31L28 25L21.5 18" stroke="white"/></svg>');
+    }
+}
+
+.gray-box {
+    background-color: rgba(121, 121, 121, 0.5);
+    border: 1px solid white;
+    font-weight: 800;
+    padding: 15px 24px;
+    font-size: 41px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:560px) {
+    p {
+        font-size: 14px;
+    }
+
+}

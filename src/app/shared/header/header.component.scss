@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+
+header {
+    transition: all 0.3s;
+    z-index: 99;
+    background-color: $primary;
+    .header-top{
+        .center-logo{
+            width: 300px;
+        }
+    }
+
+    .navbar-nav {
+        gap: 4rem;
+        .nav-item {
+            a.nav-link {
+                padding: 0;
+                color: white !important;
+                letter-spacing: 1px;
+                font-size: 14px;
+                font-weight: bold;
+
+                &.active {
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+
+    .header-logo {
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    header {
+        .navbar-collapse {
+            background-color: $primary;
+
+            li {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:700px) {
+
+    header {
+        .header-logo {
+            width: 62px;
+        }
+        .center-logo{
+            width: 200px !important;
+        }
+    }
+}

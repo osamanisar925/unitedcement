@@ -1,0 +1,209 @@
+@import "../../../styles/variables";
+
+.video-section {
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+    // padding-bottom: 65px;
+    padding-top: 215px;
+    background-color: rgba(64, 73, 178, 0.2);
+    overflow: hidden;
+
+    .video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        /* Ensure the video covers the entire section */
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        /* Place the video behind the content */
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        /* Ensure the content is above the video */
+    }
+
+    .content {
+        gap: 15rem;
+    }
+}
+
+
+.animated-svg {
+    overflow: visible;
+
+    .animate-left {
+        &.hidden {
+            opacity: 0;
+            /* display: none; */
+            transform: translateX(-50px) translateY(0px);
+            transition: opacity 1.5s ease, transform 2s ease;
+        }
+
+        &.show {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    .animate-bottom {
+        &.hidden {
+            opacity: 0;
+            /* display: none; */
+            transform: translateX(135px) translateY(440px);
+            transition: opacity 1.5s ease, transform 2s ease;
+        }
+
+        &.show {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    .animate-right {
+        &.hidden {
+            opacity: 0;
+            /* display: none; */
+            transform: translateX(172px) translateY(0px);
+            transition: opacity 1.5s ease, transform 2s ease;
+        }
+
+        &.show {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+    }
+}
+
+.card-section {
+    .card-hover {
+        .card-img-overlay {
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            .card-img-overlay {
+                background-color: rgba($primary, 0.6)
+            }
+        }
+    }
+}
+
+.download-section {
+    margin-block: 75px;
+    padding-block: 100px;
+
+    // min-height: 400px;
+    img.mobile-image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 500px;
+    }
+}
+
+.slider-section {
+    background-image: url('/slider-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    padding-block: 45px;
+
+    .clip {
+        overflow: hidden;
+        bottom: 0;
+    }
+
+    .center {
+        background-image: url('/Cement1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 413px;
+
+        .slick-slide {
+            height: 344px;
+        }
+    }
+
+    .slick-center {
+        img {
+            transform: scale(1.2) translateY(24px);
+            opacity: 1;
+        }
+
+        .cement-shadow {
+            transform: translateY(42px);
+        }
+    }
+
+    img {
+        opacity: 0.8;
+        transition: all 500ms ease;
+        transform: scale(0.9);
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 48px;
+        height: 48px;
+        z-index: 9;
+
+        &::before {
+            content: '' !important;
+            display: block;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .slick-prev:before {
+        background-image: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="%234054B2"/><path d="M26.5 31L20 25L26.5 18" stroke="white"/></svg>');
+    }
+
+    .slick-next:before {
+        background-image: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" transform="matrix(-1 0 0 1 48 0)" fill="%234054B2"/><path d="M21.5 31L28 25L21.5 18" stroke="white"/></svg>');
+    }
+}
+
+@media screen and (max-width:768px) {
+    .download-section {
+        padding-block: 50px;
+
+        img.mobile-image {
+            position: relative;
+            top: 20%;
+            margin-bottom: -20% !important;
+
+        }
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .slider-section {
+        .center {
+            background-size: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .download-section {
+        padding-block: 50px;
+        margin-block: 50px;
+
+        img.mobile-image {
+            height: 300px;
+            position: relative;
+            top: 20%;
+            margin-bottom: -20% !important;
+        }
+    }
+}
