@@ -4,7 +4,6 @@
     height: 100vh;
     min-height: 650px;
     position: relative;
-    // padding-bottom: 65px;
     padding-top: 215px;
     background-color: rgba(64, 73, 178, 0.2);
     overflow: hidden;
@@ -172,6 +171,16 @@
     }
 }
 
+
+@media screen and (max-width:1200px) {
+    .video-section{
+        padding-top: 40px;
+        .content {
+            gap: 10rem;
+        }
+    }
+}
+
 @media screen and (max-width:768px) {
     .download-section {
         padding-block: 50px;
@@ -183,16 +192,19 @@
 
         }
     }
-}
-
-
-@media screen and (max-width:700px) {
     .slider-section {
         .center {
             background-size: 350px;
         }
     }
+    .video-section{
+        padding-top: 0px;
+        .content {
+            gap: 7rem;
+        }
+    }
 }
+
 
 @media screen and (max-width:560px) {
     .download-section {
