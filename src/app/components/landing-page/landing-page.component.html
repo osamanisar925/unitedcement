@@ -1,4 +1,4 @@
-<section class="video-section">
+<section class="video-section" [ngClass]="{'direction-rtl':currentLang == 'ar'}">
     <video autoplay [muted]="'muted'" loop class="video-bg">
         <source src="/VID_20240608024115.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -6,36 +6,31 @@
 
     <div class="container h-100">
         <div class="content d-flex justify-content-center align-items-center flex-column h-100">
-            <div class="gray-box text-center">UNITED CEMENT INDUSTRIAL COMPANY</div>
+            <div class="gray-box text-center">{{'landingPage.section1.title' | translate}}</div>
             <div class="fw-medium text-white text-center">
                 <ul class="list-unstyled text-white d-flex fw-medium flex-md-row flex-column">
-                    <li class="px-3 mb-md-0 mb-1">PORTLAND POZZOLANA CEMENT (PPC)</li>
+                    <li class="px-3 mb-md-0 mb-1">{{'landingPage.section1.product_1' | translate}}</li>
                     <li class="vr h-100 my-auto opacity-100 d-md-block d-none"></li>
-                    <li class="px-3 mb-md-0 mb-1">SULPHATE RESISTANT CEMENT (SRC)</li>
+                    <li class="px-3 mb-md-0 mb-1">{{'landingPage.section1.product_2' | translate}}</li>
                     <li class="vr h-100 my-auto opacity-100 d-md-block d-none"></li>
-                    <li class="px-3 mb-md-0 mb-1">ORDINARY PORTLAND CEMENT (OPC)</li>
+                    <li class="px-3 mb-md-0 mb-1">{{'landingPage.section1.product_3' | translate}}</li>
                     <li class="vr h-100 my-auto opacity-100 d-md-block d-none"></li>
-                    <li class="px-3 mb-md-0 mb-1">TAMEER FINISHING CEMENT (TFC)</li>
+                    <li class="px-3 mb-md-0 mb-1">{{'landingPage.section1.product_4' | translate}}</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<section class="py-5">
+<section class="py-5" [ngClass]="{'direction-rtl':currentLang == 'ar'}">
     <div class="container">
         <div class="row">
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
-                <h3 class="text-primary fw-semibold">ABOUT US</h3>
-                <p class="mb-5">The United Cement Industrial a Saudi Company was established in 2013 under the
-                    commercial number
-                    (4030256672). United Cement industrial company owns the latest factory that was recently built
-                    in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2
-                    millions tones of cement per year that will meet the needs of our customers</p>
-                <h4 class="text-primary fw-semibold">MESSAGE FROM THE CEO</h4>
-                <P class="mb-5">United Cement Industrial Company  (UCIC) had the privilege to be supported by the Government of
-                    the Custodian of the Two Holy Mosques, by gaining a concession building permit in Al Lith city
-                    to manufacture different types of cement that matches the Global…</P>
-                <button class="btn btn-primary rounded-pill px-3">Read More</button>
+                <h3 class="text-primary fw-semibold">{{'landingPage.section2.aboutUsTitle' | translate}}</h3>
+                <p class="mb-5">{{'landingPage.section2.aboutUsDescription' | translate}}</p>
+                <h4 class="text-primary fw-semibold">{{'landingPage.section2.msgCeoTitle' | translate}}</h4>
+                <P class="mb-5">{{'landingPage.section2.msgCeoDescription' | translate}}</P>
+                <button class="btn btn-primary rounded-pill px-3">{{'landingPage.section2.readMore' |
+                    translate}}</button>
             </div>
             <div class="col-md-6">
                 <svg class="animated-svg img-fluid" width="814" height="714" viewBox="0 0 814 714" fill="none"

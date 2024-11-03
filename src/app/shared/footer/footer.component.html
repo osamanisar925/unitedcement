@@ -1,27 +1,27 @@
-<footer class="py-5">
+<footer class="py-5" [ngClass]="{'direction-rtl':currentLang == 'ar'}">
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
                 <div class="row gy-3">
                     <div class="col-sm-6">
-                        <h5 class="text-white mb-3">QUICK LINKS</h5>
+                        <h5 class="text-white mb-3">{{'footer.quickLinks.heading' | translate}}</h5>
                         <div class="row">
                             <div class="col-6">
                                 <ul>
-                                    <li class="arrow-right"><a class="text-white" href="">Home</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Shop</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Clients</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Products</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Quality Assurance</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.home' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.shop' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.clients' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.products' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.qualityAssurance' | translate}}</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
                                 <ul>
-                                    <li class="arrow-right"><a class="text-white" href="">Vendors</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">News</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Career</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Contact Us</a></li>
-                                    <li class="arrow-right"><a class="text-white" href="">Offers</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.vendors' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.news' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.career' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.contactUs' | translate}}</a></li>
+                                    <li class="arrow-right"><a class="text-white" href="">{{'footer.quickLinks.offers' | translate}}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <h5 class="text-white mb-3">OUR PORTFOLIO</h5>
+                <h5 class="text-white mb-3">{{'footer.ourPorfolio' | translate}}</h5>
                 <img src="/portfolio-collage.png" class="img-fluid">
 
             </div>

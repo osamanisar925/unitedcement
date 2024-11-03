@@ -104,6 +104,10 @@
     background-color: transparent;
 }
 
+.direction-rtl {
+    direction: rtl;
+}
+
 @media screen and (max-width:1200px) {
     .gray-box {
         font-size: 35px;

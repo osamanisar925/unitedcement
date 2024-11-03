@@ -1,9 +1,8 @@
 <header class="header py-2 w-100">
     <div class="container">
         <div class="header-top position-relative mb-2">
-         
-            <div
-                class="position-absolute d-none d-lg-flex end-0 top-50 translate-middle-y gap-3 align-items-center">
+
+            <div class="position-absolute d-none d-lg-flex end-0 top-50 translate-middle-y gap-3 align-items-center">
                 <a href="">
                     <img src="/twitter-icon.png" alt="">
                 </a>
@@ -20,12 +19,13 @@
                     <img src="/google-icon.png" alt="">
                 </a>
                 <div class="vr opacity-100 text-white m-auto" style="height: 20px;"></div>
-                <button class="btn btn-light rounded-pill fw-bold text-primary px-3"  onclick="location.href='https://erpcollab.com'">العربية</button>
+                <button class="btn btn-secondary rounded-pill fw-bold text-primary px-3"
+                    (click)="translateText()">{{'headerButtons.lang' | translate}}</button>
             </div>
             <img class="center-logo m-auto position-absolute start-50 translate-middle top-50" src="/slogan.png" alt="">
             <img class="header-logo d-flex" src="/logo.svg" alt="">
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom" [ngClass]="{'direction-rtl':currentLang == 'ar'}">
             <nav class="navbar navbar-dark navbar-expand-xl">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,69 +49,72 @@
                         <img src="/google-icon.png" alt="">
                     </a>
                     <div class="vr opacity-100 text-white m-auto" style="height: 20px;"></div>
-                    <button class="btn btn-light rounded-pill fw-bold text-primary px-3">العربية</button>
+                    <button class="btn btn-secondary rounded-pill fw-bold text-primary px-3"
+                        (click)="translateText()">{{'headerButtons.lang' | translate}}</button>
                 </div>
                 <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="/landing-page" routerLinkActive="active" aria-current="page" >Home</a>
+                            <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
+                                aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="/shopping" routerLinkActive="active">Shop</a>
+                            <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
+                                | translate}}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                About
+                                {{'headerButtons.about' | translate}}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" >Action</a></li>
-                                <li><a class="dropdown-item" >Another action</a></li>
+                                <li><a class="dropdown-item">Action</a></li>
+                                <li><a class="dropdown-item">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" >Something else here</a></li>
+                                <li><a class="dropdown-item">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Clients
+                                {{'headerButtons.clients' | translate}}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" >Action</a></li>
-                                <li><a class="dropdown-item" >Another action</a></li>
+                                <li><a class="dropdown-item">Action</a></li>
+                                <li><a class="dropdown-item">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" >Something else here</a></li>
+                                <li><a class="dropdown-item">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" >Products</a>
+                            <a class="nav-link">{{'headerButtons.products' | translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" >Quality Assurance</a>
+                            <a class="nav-link">{{'headerButtons.qualityAssurance' | translate}}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Vendors
+                                {{'headerButtons.vendors' | translate}}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" >Action</a></li>
-                                <li><a class="dropdown-item" >Another action</a></li>
+                                <li><a class="dropdown-item">Action</a></li>
+                                <li><a class="dropdown-item">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" >Something else here</a></li>
+                                <li><a class="dropdown-item">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" >News</a>
+                            <a class="nav-link">{{'headerButtons.news' | translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" >Career</a>
+                            <a class="nav-link">{{'headerButtons.career' | translate}}</a>
                         </li>
                     </ul>
                 </div>

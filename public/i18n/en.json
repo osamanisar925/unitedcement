@@ -1,0 +1,46 @@
+{
+    "headerButtons": {
+        "home": "Home",
+        "shop": "Shop",
+        "about": "About",
+        "clients": "Clients",
+        "products": "Products",
+        "qualityAssurance": "Quality Assurance",
+        "vendors": "Vendors",
+        "news": "News",
+        "career": "Career",
+        "lang": "العربية"
+    },
+    "landingPage": {
+        "section1": {
+            "title": "UNITED CEMENT INDUSTRIAL COMPANY",
+            "product_1": "PORTLAND POZZOLANA CEMENT (PPC)",
+            "product_2": "SULPHATE RESISTANT CEMENT (SRC)",
+            "product_3": "ORDINARY PORTLAND CEMENT (OPC)",
+            "product_4": "TAMEER FINISHING CEMENT (TFC)"
+        },
+        "section2":{
+            "aboutUsTitle": "ABOUT US",
+            "aboutUsDescription":"The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 millions tones of cement per year that will meet the needs of our customers",
+            "msgCeoTitle":"MESSAGE FROM THE CEO",
+            "msgCeoDescription":"United Cement Industrial Company  (UCIC) had the privilege to be supported by the Government of the Custodian of the Two Holy Mosques, by gaining a concession building permit in Al Lith city to manufacture different types of cement that matches the Global…",
+            "readMore":"Read More"
+        }
+    },
+    "footer": {
+        "quickLinks": {
+            "heading": "Quick Links",
+            "home": "Home",
+            "shop": "Shop",
+            "clients": "Clients",
+            "products": "Products",
+            "qualityAssurance": "Quality Assurance",
+            "vendors": "Vendors",
+            "news": "News",
+            "career": "Career",
+            "contactUs": "Contact Us",
+            "offers": "Offers"
+        },
+        "ourPorfolio": "Our Portfolio"
+    }
+}
