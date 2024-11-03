@@ -4,15 +4,17 @@ $font-family-sans-serif: 'Noto Sans Arabic','Metropolis', sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 $primary: #181998;
-$secondary: #6c757d; // Define if not already defined
+$secondary: #D7D7D7; // Define if not already defined
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
-$light: #f8f9fa;
+$light: #A3A3A3;
 $dark: #343a40;
-$body-color: #424242;
+$body-color: #202020;
 $link-color: $primary;
+
+$card-border-color: $secondary;
 
 $theme-colors: (
     "primary": $primary,

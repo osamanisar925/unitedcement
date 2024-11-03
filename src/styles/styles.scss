@@ -90,18 +90,30 @@
     color: white;
 }
 
+.blue-box {
+    background-color: rgba(64, 84, 178, 0.5);
+    border: 1px solid white;
+    font-weight: 800;
+    padding: 15px 40px;
+    font-size: 41px;
+    letter-spacing: 2px;
+    color: white;
+}
 
+.btn-light:not(:hover) {
+    background-color: transparent;
+}
 
 @media screen and (max-width:1200px) {
     .gray-box {
         font-size: 35px;
-    }    
+    }
 }
 
 @media screen and (max-width:768px) {
     .gray-box {
         font-size: 25px;
-    }    
+    }
 }
 
 @media screen and (max-width:560px) {

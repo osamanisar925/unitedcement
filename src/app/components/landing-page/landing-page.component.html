@@ -1,7 +1,5 @@
-<app-header></app-header>
-
 <section class="video-section">
-    <video autoplay muted loop class="video-bg">
+    <video autoplay [muted]="'muted'" loop class="video-bg">
         <source src="/VID_20240608024115.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -701,5 +699,3 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
-
-<app-footer></app-footer>
