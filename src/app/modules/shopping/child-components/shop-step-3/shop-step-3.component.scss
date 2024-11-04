@@ -1,0 +1,59 @@
+.card.card-grid {
+    background-color: #eeeeee;
+    border-radius: 18px;
+
+    .card-img {
+        padding: 50px 20px;
+    }
+
+    .card-body {
+        background-color: white;
+        border-radius: 20px;
+        margin: 2px;
+    }
+}
+
+.card.card-list {
+    border-radius: 20px;
+    background-color: #eeeeee;
+
+    .card-image {
+        padding: 20px 20px;
+        text-align: center;
+
+        img {
+            max-height: 185px;
+        }
+    }
+
+    .card-body {
+        background-color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin: 1px;
+    }
+}
+
+.nav {
+    .nav-item a:not(.active) {
+        opacity: 0.3;
+    }
+}
+
+.cement-banner {
+    background-color: #E8E8E8;
+    min-height: 630px;
+    border-radius: 30px;
+    background-image: url('/cement-cones-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+
+.text-custom {
+    color: #494949;
+}
+
+.btn-light-border {
+    border-color: #B1B1B3
+}

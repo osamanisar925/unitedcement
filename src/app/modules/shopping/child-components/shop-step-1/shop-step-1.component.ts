@@ -10,6 +10,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ShopStep1Component {
   @Output() childNextStep = new EventEmitter<string>();
 
+  ngOnInit(): void {
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   next() {
     this.childNextStep.emit('2');
   }
