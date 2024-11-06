@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { ShopStep3Component } from "./child-components/shop-step-3/shop-step-3.component";
 import { ShopStep4Component } from "./child-components/shop-step-4/shop-step-4.component";
 import { ShopStep5Component } from "./child-components/shop-step-5/shop-step-5.component";
+import { ShopStep6Component } from "./child-components/shop-step-6/shop-step-6.component";
 
 @Component({
   selector: 'app-shopping',
   standalone: true,
-  imports: [CommonModule, ShopStep1Component, ShopStep2Component, ShopStep3Component, ShopStep4Component, ShopStep5Component],
+  imports: [CommonModule, ShopStep1Component, ShopStep2Component, ShopStep3Component, ShopStep4Component, ShopStep5Component, ShopStep6Component],
   templateUrl: './shopping.component.html',
   styleUrl: './shopping.component.scss'
 })

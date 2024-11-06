@@ -108,6 +108,11 @@
     direction: rtl;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px; // Set the desired font size
+}
+
 @media screen and (max-width:1200px) {
     .gray-box {
         font-size: 35px;

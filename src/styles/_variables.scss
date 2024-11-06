@@ -14,6 +14,7 @@ $dark: #343a40;
 $body-color: #202020;
 $link-color: $primary;
 $gray:#89898A;
+$gray-2:#909090;
 $white:#ffffff;
 
 $card-border-color: $secondary;
@@ -23,6 +24,9 @@ $form-check-input-checked-color:          $primary;
 $form-check-input-checked-bg-color:       $white;
 $form-check-input-checked-border-color:   $primary;
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+
+$input-placeholder-color: #909090;
+$input-border-color: #BFBFBF;
 
 $theme-colors: (
     "primary": $primary,

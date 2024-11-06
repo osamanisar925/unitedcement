@@ -4,6 +4,7 @@ import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from './shared/services/language/language.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  translate: TranslateService = inject(TranslateService);
   title = 'unitedcement';
-  currentLang = localStorage.getItem('lang') || this.translate.currentLang;
+  currentLang: string = localStorage.getItem('lang') || 'en';
+  languageService = inject(LanguageService);
+
+  constructor() {
+    this.languageService.currentLang$.subscribe(lang => {
+      this.currentLang = lang; // Update currentLang reactively
+    });
+  }
 }
