@@ -19,12 +19,39 @@
             "product_3": "ORDINARY PORTLAND CEMENT (OPC)",
             "product_4": "TAMEER FINISHING CEMENT (TFC)"
         },
-        "section2":{
+        "section2": {
             "aboutUsTitle": "ABOUT US",
-            "aboutUsDescription":"The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 millions tones of cement per year that will meet the needs of our customers",
-            "msgCeoTitle":"MESSAGE FROM THE CEO",
-            "msgCeoDescription":"United Cement Industrial Company  (UCIC) had the privilege to be supported by the Government of the Custodian of the Two Holy Mosques, by gaining a concession building permit in Al Lith city to manufacture different types of cement that matches the Global…",
-            "readMore":"Read More"
+            "aboutUsDescription": "The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 millions tones of cement per year that will meet the needs of our customers",
+            "msgCeoTitle": "MESSAGE FROM THE CEO",
+            "msgCeoDescription": "United Cement Industrial Company  (UCIC) had the privilege to be supported by the Government of the Custodian of the Two Holy Mosques, by gaining a concession building permit in Al Lith city to manufacture different types of cement that matches the Global…",
+            "readMore": "Read More"
+        },
+        "section3": {
+            "title": "OUR PRODUCTS",
+            "product_1":{ 
+                "title": "PORTLAND POZZOLANA CEMENT (PPC)",
+                "description": "Portland Pozzolana Cement is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
+            },
+            "product_2":{ 
+                "title": "SULPHATE RESISTANT CEMENT (SRC)",
+                "description": "SULPHATE RESISTANT CEMENT (SRC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
+            },
+            "product_3":{ 
+                "title": "ORDINARY PORTLAND CEMENT (OPC)",
+                "description": "ORDINARY PORTLAND CEMENT (OPC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
+            },
+            "product_4":{ 
+                "title": "TAMEER FINISHING CEMENT (TFC)",
+                "description": "TAMEER FINISHING CEMENT (TFC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
+            },
+            "buyNowBtn": "Buy Now"
+        },
+        "section4": {
+            "title": "NEWS",
+            "description": "UCIC decided to select the best machinaries with high quality and safety. thus, all major equipments are european origin. The whole plant is operated from one control room an auto mode without human intervention except in rare cases"
+        },
+        "section5": {
+            "title": "United Cement Mobile APPS"
         }
     },
     "footer": {

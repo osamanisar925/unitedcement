@@ -1,0 +1,125 @@
+@import "../../../../../styles/variables";
+
+.card.card-fields {
+    border-radius: 10px;
+
+    .card-header {
+        padding: 20px 30px;
+    }
+
+    .card-body {
+        padding: 20px 30px;
+    }
+}
+
+.form-label {
+    color: #1e1e1e;
+    font-size: 14px;
+}
+
+.custom-radio {
+    width: 100%;
+    cursor: pointer;
+
+    input[type="radio"] {
+        display: none; // Hide the default radio button
+    }
+
+    .radio-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 11px 22px;
+        border-radius: 50px; // Pill shape
+        border: 1px solid #bcbcbc;
+        transition: all 0.3s ease;
+
+        .radio-text {
+            font-size: 16px;
+            font-weight: 500;
+            color: #BCBCBC;
+            margin-right: auto;
+        }
+
+        .radio-icon {
+            display: inline-flex;
+
+            svg {
+                path {
+                    fill: #BCBCBC;
+                }
+            }
+        }
+
+        // Hover effect for the custom radio button
+        &:hover {
+            border-color: $primary;
+        }
+    }
+
+    // Checked state styles
+    input[type="radio"]:checked+.radio-content {
+        // Add primary border color when checked
+        border-color: $primary;
+
+        .radio-text {
+            color: $primary; // Change text color
+        }
+
+        .radio-icon {
+            svg {
+                path {
+                    fill: $primary;
+                }
+            }
+        }
+    }
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    width: fit-content;
+
+    span {
+        text-align: center;
+        width: 60px;
+    }
+
+    button {
+        height: 30px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            path {
+                fill: #909090;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #f8f9fa;
+                }
+            }
+        }
+    }
+}
+
+.light-blue-box{
+    background-color: #F3F5FF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}

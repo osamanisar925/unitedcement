@@ -13,11 +13,13 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="register-tab" data-bs-toggle="tab"
                             data-bs-target="#register-tab-pane" type="button" role="tab"
-                            aria-controls="register-tab-pane" aria-selected="false" (click)="setAccountTitle('register')">Register</button>
+                            aria-controls="register-tab-pane" aria-selected="false"
+                            (click)="setAccountTitle('register')">Register</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="guest-tab" data-bs-toggle="tab" data-bs-target="#guest-tab-pane"
-                            type="button" role="tab" aria-controls="guest-tab-pane" aria-selected="false" (click)="setAccountTitle('guest')">Guest</button>
+                            type="button" role="tab" aria-controls="guest-tab-pane" aria-selected="false"
+                            (click)="setAccountTitle('guest')">Guest</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -143,6 +145,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2 mt-2">
+            <button class="btn btn-outline-primary px-4 rounded-pill" (click)="back()">Back</button>
+            <button class="btn btn-primary px-4 rounded-pill" (click)="next()">Next</button>
         </div>
     </div>
 </section>

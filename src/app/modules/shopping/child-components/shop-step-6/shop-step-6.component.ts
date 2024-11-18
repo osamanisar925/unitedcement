@@ -9,7 +9,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class ShopStep6Component {
   @Output() childNextStep = new EventEmitter<string>();
-  passwordVisible: boolean = false;
   accountTitle: string = 'Login To Your Account';
   
   ngOnInit(): void {
