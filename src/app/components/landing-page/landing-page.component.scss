@@ -80,31 +80,11 @@
     }
 }
 
-.card-section {
-    .card-hover {
-        .card-img-overlay {
-            transition: all 0.3s;
-        }
-
-        &:hover {
-            .card-img-overlay {
-                background-color: rgba($primary, 0.6)
-            }
-        }
-    }
-}
 
 .download-section {
-    margin-block: 75px;
-    padding-block: 100px;
-
-    // min-height: 400px;
-    img.mobile-image {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 500px;
-    }
+    background-color: #EFF2FF;
+    padding: 94px;
+    border-radius: 40px;
 }
 
 .slider-section {
@@ -172,10 +152,54 @@
     }
 }
 
+.btn-carousel {
+    border: 1px solid $gray;
+    padding: 10px 12px 12px 12px;
+
+    svg {
+        path {
+            fill: $gray;
+        }
+    }
+
+    &:hover {
+        border-color: $primary;
+
+        svg {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    &.active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+.card-shadow {
+    box-shadow: 0px 5px 16px 3px rgba(16, 24, 40, 0.08);
+}
+
+.profile-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 50px;
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+    }
+}
 
 @media screen and (max-width:1200px) {
-    .video-section{
+    .video-section {
         padding-top: 40px;
+
         .content {
             gap: 10rem;
         }
@@ -183,23 +207,17 @@
 }
 
 @media screen and (max-width:768px) {
-    .download-section {
-        padding-block: 50px;
 
-        img.mobile-image {
-            position: relative;
-            top: 20%;
-            margin-bottom: -20% !important;
 
-        }
-    }
     .slider-section {
         .center {
             background-size: 350px;
         }
     }
-    .video-section{
+
+    .video-section {
         padding-top: 0px;
+
         .content {
             gap: 7rem;
         }

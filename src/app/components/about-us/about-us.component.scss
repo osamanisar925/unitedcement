@@ -1,0 +1,118 @@
+.shop-banner {
+    background-image: url('/shope-banner.png');
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linear-purple-section {
+    background-image: url('/about-us/bg-top.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.overlay-text {
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-50%);
+    margin-bottom: 80px;
+}
+
+.ceo-image {
+    position: relative;
+
+    img {
+
+        padding-right: 6rem;
+    }
+
+    .ceo-badge {
+        border: 8px solid white;
+        border-radius: 11px;
+        background-color: #D1D1D1;
+        text-align: center;
+        width: 200px;
+        color: #414141;
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+
+        h4 {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+    }
+
+}
+
+.section-core-value {
+    background-image: url('/section-bottom-ellipse.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cards-container {
+    border-radius: 20px;
+    border: 1px solid #BDBDBD;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.text-custom-gray {
+    color: #747474
+}
+
+@media (max-width: 992px) {
+    .ceo-image {
+
+        img {
+
+            padding-right: 5rem;
+        }
+
+        .ceo-badge {
+            width: 163px;
+
+            h4 {
+                font-size: 18px;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+    .section-core-value {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .cards-container {
+        margin-bottom: 100px;
+    }
+
+    .points-border .col:not(:last-child) {
+        border-right: 1px solid #5C5C5C;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}

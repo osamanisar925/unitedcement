@@ -1,0 +1,43 @@
+.environmental-protection {
+    padding-top: 100px;
+    background-image: url('/social-responsibilities/concept-hands-holding-earth-bulb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 200px;
+}
+
+.enviromental-points {
+    background-color: #FAFAFC;
+    border: 1px solid #EDE5FF;
+    border-radius: 10px;
+    padding: 14px 20px;
+    height: 100%;
+    transform: translateY(50%);
+    box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.08);
+}
+
+.margin-top-negative {
+    margin-top: -70px;
+}
+
+@media (max-width: 992px) {
+    .environmental-protection {
+        padding: 60px 0px;
+        margin: 0px;
+    }
+
+    .enviromental-points {
+        transform: translateY(0%);
+    }
+
+    .margin-top-negative {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
