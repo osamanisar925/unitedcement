@@ -58,10 +58,6 @@
                             <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
                                 aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
-                                | translate}}</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" [ngClass]="{'active': isDropdownLinkActive()}">
@@ -90,6 +86,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/products" routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
+                                | translate}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/quality-assurance" routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
