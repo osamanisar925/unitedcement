@@ -13,7 +13,7 @@ import { LanguageService } from '../services/language/language.service';
 })
 export class HeaderComponent {
   translate: TranslateService = inject(TranslateService);
-  currentLang = localStorage.getItem('lang') || this.translate.currentLang;
+  currentLang = localStorage.getItem('lang') ?? this.translate.currentLang;
   languageService = inject(LanguageService);
   private readonly router = inject(Router);
 

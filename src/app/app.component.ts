@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
-import { TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from './shared/services/language/language.service';
 
@@ -15,7 +14,7 @@ import { LanguageService } from './shared/services/language/language.service';
 })
 export class AppComponent {
   title = 'unitedcement';
-  currentLang: string = localStorage.getItem('lang') || 'en';
+  currentLang: string = localStorage.getItem('lang') ?? 'en';
   languageService = inject(LanguageService);
 
   constructor() {

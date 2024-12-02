@@ -82,13 +82,21 @@
 
 
 .download-section {
+    position: relative;
     background-color: #EFF2FF;
     padding: 94px;
     border-radius: 40px;
+
+    .absolute-image {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 400px;
+    }
 }
 
 .slider-section {
-    background-image: url('/slider-bg.png');
+    background-image: url('/landing-page/slider-bg.png');
     background-position: bottom;
     background-size: cover;
     padding-block: 45px;
@@ -100,7 +108,7 @@
     }
 
     .center {
-        background-image: url('/Cement1.png');
+        background-image: url('/landing-page/Cement1.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 413px;
@@ -204,6 +212,14 @@
             gap: 10rem;
         }
     }
+
+    .download-section {
+        padding: 40px;
+
+        .absolute-image {
+            width: 350px;
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -222,19 +238,20 @@
             gap: 7rem;
         }
     }
-}
-
-
-@media screen and (max-width:560px) {
+    
     .download-section {
-        padding-block: 50px;
-        margin-block: 50px;
+        padding-bottom: 400px;
 
-        img.mobile-image {
-            height: 300px;
-            position: relative;
-            top: 20%;
-            margin-bottom: -20% !important;
+        .absolute-image {
+            width: 300px;
         }
     }
 }
+
+
+// @media screen and (max-width:560px) {
+//     .download-section {
+
+//         padding: 50px;
+//     }
+// }
