@@ -1,6 +1,6 @@
 @import "custom-fonts";
 
-$font-family-sans-serif: 'Noto Sans Arabic','Metropolis', sans-serif;
+$font-family-sans-serif: 'Noto Sans Arabic', 'Metropolis', sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 $primary: #181998;
@@ -13,20 +13,26 @@ $light: #A3A3A3;
 $dark: #343a40;
 $body-color: #202020;
 $link-color: $primary;
-$gray:#89898A;
-$gray-2:#909090;
-$white:#ffffff;
+$gray: #89898A;
+$gray-2: #909090;
+$white: #ffffff;
+
+$border-radius-lg: 20px;
 
 $card-border-color: $secondary;
 
-$form-check-input-width:                  1.3em;
-$form-check-input-checked-color:          $primary;
-$form-check-input-checked-bg-color:       $white;
-$form-check-input-checked-border-color:   $primary;
-$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-width: 1.3em;
+$form-check-input-checked-color: $primary;
+$form-check-input-checked-bg-color: $white;
+$form-check-input-checked-border-color: $primary;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
 
 $input-placeholder-color: #909090;
 $input-border-color: #BFBFBF;
+
+$carousel-indicator-width: 8px;
+$carousel-indicator-height: 8px;
+$carousel-dark-indicator-active-bg: $primary;
 
 $theme-colors: (
     "primary": $primary,
@@ -44,5 +50,5 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1140px,
-    xxl: 1500px
+    xxl: 1350px
 );

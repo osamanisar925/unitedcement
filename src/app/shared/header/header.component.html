@@ -64,16 +64,14 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="false" [ngClass]="{'active': isDropdownLinkActive()}">
                                 {{'headerButtons.about' | translate}}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Action</a></li>
-                                <li><a class="dropdown-item">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item">Something else here</a></li>
+                                <li><a class="dropdown-item" routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+                                <li><a class="dropdown-item" routerLink="/management-team" routerLinkActive="active">Management Team</a></li>
+                                <li><a class="dropdown-item" routerLink="/saudization-training" routerLinkActive="active">Saudization & Training</a></li>
+                                <li><a class="dropdown-item" routerLink="/social-responsibilities" routerLinkActive="active">Social Responsibilities & Enviromental Protection</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -91,24 +89,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">{{'headerButtons.products' | translate}}</a>
+                            <a class="nav-link" routerLink="/products" routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">{{'headerButtons.qualityAssurance' | translate}}</a>
+                            <a class="nav-link" routerLink="/quality-assurance" routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                {{'headerButtons.vendors' | translate}}
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Action</a></li>
-                                <li><a class="dropdown-item">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/vendors" routerLinkActive="active">{{'headerButtons.vendors' | translate}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">{{'headerButtons.news' | translate}}</a>

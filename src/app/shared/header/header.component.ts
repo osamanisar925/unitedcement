@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {Component, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../services/language/language.service';
 
@@ -15,6 +15,7 @@ export class HeaderComponent {
   translate: TranslateService = inject(TranslateService);
   currentLang = localStorage.getItem('lang') || this.translate.currentLang;
   languageService = inject(LanguageService);
+  private readonly router = inject(Router);
 
   constructor() {
     this.translate.use(this.currentLang);
@@ -27,4 +28,8 @@ export class HeaderComponent {
     this.languageService.changeLanguage(newLang); 
   }
 
+  isDropdownLinkActive(): boolean {
+    const currentUrl = this.router.url;
+    return currentUrl.startsWith('/about-us') || currentUrl.startsWith('/management-team') || currentUrl.startsWith('/saudization-training') || currentUrl.startsWith('/social-responsibilities');
+  }
 }

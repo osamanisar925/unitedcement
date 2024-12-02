@@ -80,24 +80,25 @@
     }
 }
 
-.gray-box {
-    background-color: rgba(121, 121, 121, 0.5);
-    border: 1px solid white;
-    font-weight: 800;
-    padding: 15px 24px;
-    font-size: 41px;
-    letter-spacing: 2px;
-    color: white;
-}
 
+.gray-box,
 .blue-box {
-    background-color: rgba(64, 84, 178, 0.5);
     border: 1px solid white;
     font-weight: 800;
     padding: 15px 40px;
     font-size: 41px;
     letter-spacing: 2px;
     color: white;
+    margin: 10px;
+
+}
+
+.gray-box {
+    background-color: rgba(121, 121, 121, 0.5);
+}
+
+.blue-box {
+    background-color: rgba(64, 84, 178, 0.5);
 }
 
 .btn-light:not(:hover) {
@@ -114,26 +115,54 @@
 
 input::placeholder,
 textarea::placeholder {
-  font-size: 14px; // Set the desired font size
+    font-size: 14px; // Set the desired font size
 }
 
-a{
+a {
     cursor: pointer;
 }
 
-.fs-18{
+.fs-18 {
     font-size: 18px;
 }
 
+.py-100 {
+    padding: 100px 0px;
+}
+
+.shop-banner {
+    background-image: url('/shope-banner.png');
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:1200px) {
-    .gray-box {
+
+    .gray-box,
+    .blue-box {
         font-size: 35px;
     }
 }
 
+@media (max-width: 992px) {
+
+    .py-100 {
+        padding: 60px 0px;
+    }
+}
+
 @media screen and (max-width:768px) {
-    .gray-box {
+
+    .gray-box,
+    .blue-box {
         font-size: 25px;
+    }
+
+    .fs-5 {
+        font-size: 1rem !important;
     }
 }
 
