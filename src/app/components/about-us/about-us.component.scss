@@ -22,7 +22,9 @@
 }
 
 .ceo-image {
-    position: relative;
+    position: absolute;
+    top: -103px;
+    left: -25px;
 
     img {
 
@@ -30,22 +32,12 @@
     }
 
     .ceo-badge {
-        border: 8px solid white;
-        border-radius: 11px;
-        background-color: #D1D1D1;
-        text-align: center;
-        width: 200px;
-        color: #414141;
         position: absolute;
-        bottom: 40px;
-        right: 0;
+        bottom: 11px;
+        left: 0;
 
-        h4 {
+        p {
             font-size: 24px;
-        }
-
-        h5 {
-            font-size: 20px;
         }
     }
 
@@ -72,24 +64,37 @@
     color: #747474
 }
 
+.bg-light-pink {
+    background-color: rgba(245, 241, 255, 1);
+    border-radius: 50rem;
+}
+
+@media (max-width: 1500px) {
+    .bg-light-pink {
+        border-radius: 3rem;
+    }
+
+    .ceo-image {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
 @media (max-width: 992px) {
     .ceo-image {
 
         img {
 
-            padding-right: 5rem;
+            padding-right: 0rem;
         }
 
         .ceo-badge {
-            width: 163px;
 
-            h4 {
+            p {
                 font-size: 18px;
             }
 
-            h5 {
-                font-size: 16px;
-            }
         }
 
     }
