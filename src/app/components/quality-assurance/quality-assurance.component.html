@@ -34,40 +34,16 @@
             of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s</p> -->
         <div class="row mt-5 gx-lg-5">
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+            <div class="col-xl-3 col-md-6 mb-md-5 mb-3" *ngFor="let card of cards">
+                <div class="card h-100">
                     <div class="card-header">
-                        <h5 class="fw-semibold">Certficate 1 lorem ipsum doler
-                            18001-2007</h5>
+                        <p class="text-center">{{ card.header }}</p>
                     </div>
-                    <div class="card-body">
-                        <img src="assets/images/quality-assurance/certificate_1.jpg" class="img-fluid w-100" alt="">
+                    <div class="card-body" (click)="openDocumentViewerModal(card.imageUrl, card.header)">
+                        <img [src]="card.imageUrl" class="img-fluid w-100" alt="{{ card.header }}" />
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="fw-semibold">Certficate 1 lorem ipsum doler
-                            18001-2007</h5>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/images/quality-assurance/Cambridge_CELTA_certificate.png" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="fw-semibold">Certficate 1 lorem ipsum doler
-                            18001-2007</h5>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/images/quality-assurance/Cambridge_CELTA_certificate.png" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
