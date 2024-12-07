@@ -17,8 +17,14 @@ export class HeaderComponent {
   languageService = inject(LanguageService);
   private readonly router = inject(Router);
 
+  isDropdownVisible = false;
+
   constructor() {
     this.translate.use(this.currentLang);
+  }
+
+  toggleDropdown(show: boolean) {
+    this.isDropdownVisible = show;
   }
 
   translateText() {

@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .shop-banner {
-    background-image: url('/shope-banner.png');
+    background-image: url('/assets/images/shope-banner.png');
     height: 450px;
     display: flex;
     justify-content: center;
@@ -23,14 +23,14 @@
 }
 
 .section-bg {
-    background-image: url('/bg-lines.png');
+    background-image: url('/assets/images/bg-lines.png');
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
 }
 
 .section-bg-2 {
-    background-image: url('/saudization_training/bg-lines.png');
+    background-image: url('/assets/images/saudization_training/bg-lines.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 100%;

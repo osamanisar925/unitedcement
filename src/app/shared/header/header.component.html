@@ -4,26 +4,26 @@
 
             <div class="position-absolute d-none d-lg-flex end-0 top-50 translate-middle-y gap-3 align-items-center">
                 <a href="">
-                    <img src="/twitter-icon.png" alt="">
+                    <img src="assets/images/twitter-icon.png" alt="">
                 </a>
                 <a href="">
-                    <img src="/facebook-icon.png" alt="">
+                    <img src="assets/images/facebook-icon.png" alt="">
                 </a>
                 <a href="">
-                    <img src="/instagram-icon.png" alt="">
+                    <img src="assets/images/instagram-icon.png" alt="">
                 </a>
                 <a href="">
-                    <img src="/youtube-icon.png" alt="">
+                    <img src="assets/images/youtube-icon.png" alt="">
                 </a>
                 <a href="">
-                    <img src="/google-icon.png" alt="">
+                    <img src="assets/images/google-icon.png" alt="">
                 </a>
                 <div class="vr opacity-100 text-white m-auto" style="height: 20px;"></div>
                 <button class="btn btn-secondary rounded-pill fw-bold text-primary px-3"
                     (click)="translateText()">{{'headerButtons.lang' | translate}}</button>
             </div>
-            <img class="center-logo m-auto position-absolute start-50 translate-middle top-50" src="/slogan.png" alt="">
-            <img class="header-logo d-flex" src="/logo.svg" alt="">
+            <img class="center-logo m-auto position-absolute start-50 translate-middle top-50" src="assets/images/slogan.png" alt="">
+            <img class="header-logo d-flex" src="assets/images/logo.svg" alt="">
         </div>
         <div class="header-bottom">
             <nav class="navbar navbar-dark navbar-expand-xl">
@@ -34,19 +34,19 @@
                 </button>
                 <div class="d-flex d-lg-none gap-3 align-items-center">
                     <a href="">
-                        <img src="/twitter-icon.png" alt="">
+                        <img src="assets/images/twitter-icon.png" alt="">
                     </a>
                     <a href="">
-                        <img src="/facebook-icon.png" alt="">
+                        <img src="assets/images/facebook-icon.png" alt="">
                     </a>
                     <a href="">
-                        <img src="/instagram-icon.png" alt="">
+                        <img src="assets/images/instagram-icon.png" alt="">
                     </a>
                     <a href="">
-                        <img src="/youtube-icon.png" alt="">
+                        <img src="assets/images/youtube-icon.png" alt="">
                     </a>
                     <a href="">
-                        <img src="/google-icon.png" alt="">
+                        <img src="assets/images/google-icon.png" alt="">
                     </a>
                     <div class="vr opacity-100 text-white m-auto" style="height: 20px;"></div>
                     <button class="btn btn-secondary rounded-pill fw-bold text-primary px-3"
@@ -58,12 +58,12 @@
                             <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
                                 aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
+                            <a class="nav-link dropdown-toggle"
                                 aria-expanded="false" [ngClass]="{'active': isDropdownLinkActive()}">
                                 {{'headerButtons.about' | translate}}
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" [ngClass]="{'show': isDropdownVisible}">
                                 <li><a class="dropdown-item" routerLink="/about-us" routerLinkActive="active">About Us</a></li>
                                 <li><a class="dropdown-item" routerLink="/management-team" routerLinkActive="active">Management Team</a></li>
                                 <li><a class="dropdown-item" routerLink="/saudization-training" routerLinkActive="active">Saudization & Training</a></li>
