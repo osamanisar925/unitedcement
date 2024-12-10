@@ -32,7 +32,7 @@ export class LandingPageComponent {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 200000,
       responsive: [
         {
           breakpoint: 800,

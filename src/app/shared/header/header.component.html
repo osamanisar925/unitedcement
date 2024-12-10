@@ -22,7 +22,8 @@
                 <button class="btn btn-secondary rounded-pill fw-bold text-primary px-3"
                     (click)="translateText()">{{'headerButtons.lang' | translate}}</button>
             </div>
-            <img class="center-logo m-auto position-absolute start-50 translate-middle top-50" src="assets/images/slogan.png" alt="">
+            <img class="center-logo m-auto position-absolute start-50 translate-middle top-50"
+                src="assets/images/slogan.png" alt="">
             <img class="header-logo d-flex" src="assets/images/logo.svg" alt="">
         </div>
         <div class="header-bottom">
@@ -58,44 +59,55 @@
                             <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
                                 aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
-                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
-                            <a class="nav-link dropdown-toggle"
-                                aria-expanded="false" [ngClass]="{'active': isDropdownLinkActive()}">
+                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('about',true)"
+                            (mouseleave)="toggleDropdown('about',false)">
+                            <a class="nav-link dropdown-toggle" aria-expanded="false"
+                                [ngClass]="{'active': isDropdownLinkActive()}">
                                 {{'headerButtons.about' | translate}}
                             </a>
-                            <ul class="dropdown-menu" [ngClass]="{'show': isDropdownVisible}">
-                                <li><a class="dropdown-item" routerLink="/about-us" routerLinkActive="active">About Us</a></li>
-                                <li><a class="dropdown-item" routerLink="/management-team" routerLinkActive="active">Management Team</a></li>
-                                <li><a class="dropdown-item" routerLink="/saudization-training" routerLinkActive="active">Saudization & Training</a></li>
-                                <li><a class="dropdown-item" routerLink="/social-responsibilities" routerLinkActive="active">Social Responsibilities & Enviromental Protection</a></li>
+                            <ul class="dropdown-menu" [ngClass]="{'show': isAboutDropdownVisible}">
+                                <li><a class="dropdown-item" routerLink="/about-us" routerLinkActive="active">About
+                                        Us</a></li>
+                                <li><a class="dropdown-item" routerLink="/management-team"
+                                        routerLinkActive="active">Board Members</a></li>
+                                <li><a class="dropdown-item" routerLink="/saudization-training"
+                                        routerLinkActive="active">Saudization & Training</a></li>
+                                <li><a class="dropdown-item" routerLink="/social-responsibilities"
+                                        routerLinkActive="active">Social Responsibilities & Enviromental Protection</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('clients',true)"
+                            (mouseleave)="toggleDropdown('clients',false)">
+                            <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.clients' | translate}}
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Action</a></li>
-                                <li><a class="dropdown-item">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item">Something else here</a></li>
+                            <ul class="dropdown-menu" [ngClass]="{'show': isClientsDropdownVisible}">
+                                <li><a class="dropdown-item">Client Registration</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="/products" routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
+                            <a class="nav-link" routerLink="/products"
+                                routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
                                 | translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="/quality-assurance" routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
+                            <a class="nav-link" routerLink="/quality-assurance"
+                                routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/vendors" routerLinkActive="active">{{'headerButtons.vendors' | translate}}</a>
+                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('vendors',true)"
+                            (mouseleave)="toggleDropdown('vendors',false)">
+                            <a class="nav-link dropdown-toggle" aria-expanded="false">
+                                {{'headerButtons.vendors' | translate}}
+                            </a>
+                            <ul class="dropdown-menu" [ngClass]="{'show': isVendorsDropdownVisible}">
+                                <li><a class="dropdown-item" routerLink="/vendors" routerLinkActive="active">Our
+                                        Vendors</a></li>
+                                <li><a class="dropdown-item">Vendor Registration</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">{{'headerButtons.news' | translate}}</a>

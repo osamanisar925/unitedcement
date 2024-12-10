@@ -1,0 +1,11 @@
+@import "../../../../../styles/variables";
+
+.fs-30px {
+    font-size: 30px;
+}
+.card{
+    cursor: pointer;
+    &.selected{
+        border: 2px solid $primary;
+    }
+}

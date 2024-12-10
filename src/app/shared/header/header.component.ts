@@ -17,14 +17,24 @@ export class HeaderComponent {
   languageService = inject(LanguageService);
   private readonly router = inject(Router);
 
-  isDropdownVisible = false;
+  isAboutDropdownVisible = false;
+  isVendorsDropdownVisible = false;
+  isClientsDropdownVisible = false;
 
   constructor() {
     this.translate.use(this.currentLang);
   }
 
-  toggleDropdown(show: boolean) {
-    this.isDropdownVisible = show;
+  toggleDropdown(menu: string,show: boolean) {
+      if(menu =='about'){
+        this.isAboutDropdownVisible = show;
+      }
+      else if(menu =='vendors'){
+        this.isVendorsDropdownVisible = show;
+      }
+      else if(menu =='clients'){
+        this.isClientsDropdownVisible = show;
+      }
   }
 
   translateText() {
