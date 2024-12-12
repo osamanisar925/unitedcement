@@ -60,16 +60,15 @@
                             <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
                                 aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
-                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width" (mouseenter)="toggleDropdown('about',true)"
-                            (mouseleave)="toggleDropdown('about',false)">
-                            <a class="nav-link dropdown-toggle" aria-expanded="false"
-                                [ngClass]="{'active': isDropdownLinkActive()}">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width"
+                            (mouseenter)="toggleDropdown('about',true)" (mouseleave)="toggleDropdown('about',false)">
+                            <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.about' | translate}}
                             </a>
                             <div class="dropdown-menu" [ngClass]="{'show': isAboutDropdownVisible}">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-xl-3">
+                                        <div class="col-xl-2">
                                             <img class="img-fluid" src="assets/images/menu-image.png" alt="">
                                         </div>
                                         <div class="col-xl-5">
@@ -91,14 +90,26 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown" (mouseenter)="toggleDropdown('clients',true)"
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width"
+                            (mouseenter)="toggleDropdown('clients',true)"
                             (mouseleave)="toggleDropdown('clients',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.clients' | translate}}
                             </a>
-                            <ul class="dropdown-menu" [ngClass]="{'show': isClientsDropdownVisible}">
-                                <li><a class="dropdown-item">Client Registration</a></li>
-                            </ul>
+                            <div class="dropdown-menu" [ngClass]="{'show': isClientsDropdownVisible}">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xl-2">
+                                            <img class="img-fluid" src="assets/images/menu-image.png" alt="">
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <ul class="menu-items">
+                                                <li><a class="dropdown-item">Client Registration</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link" routerLink="/products"
@@ -112,16 +123,29 @@
                             <a class="nav-link" routerLink="/quality-assurance"
                                 routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
                         </li>
-                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown" (mouseenter)="toggleDropdown('vendors',true)"
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width"
+                            (mouseenter)="toggleDropdown('vendors',true)"
                             (mouseleave)="toggleDropdown('vendors',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.vendors' | translate}}
                             </a>
-                            <ul class="dropdown-menu" [ngClass]="{'show': isVendorsDropdownVisible}">
-                                <li><a class="dropdown-item" routerLink="/vendors" routerLinkActive="active">Our
-                                        Vendors</a></li>
-                                <li><a class="dropdown-item">Vendor Registration</a></li>
-                            </ul>
+                            <div class="dropdown-menu" [ngClass]="{'show': isVendorsDropdownVisible}">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xl-2">
+                                            <img class="img-fluid" src="assets/images/menu-image.png" alt="">
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <ul class="menu-items">
+                                                <li><a class="dropdown-item" routerLink="/vendors"
+                                                        routerLinkActive="active">Our
+                                                        Vendors</a></li>
+                                                <li><a class="dropdown-item">Vendor Registration</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link">{{'headerButtons.news' | translate}}</a>

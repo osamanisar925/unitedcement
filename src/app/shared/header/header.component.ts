@@ -44,8 +44,8 @@ export class HeaderComponent {
     this.languageService.changeLanguage(newLang); 
   }
 
-  isDropdownLinkActive(): boolean {
-    const currentUrl = this.router.url;
-    return currentUrl.startsWith('/about-us') || currentUrl.startsWith('/management-team') || currentUrl.startsWith('/saudization-training') || currentUrl.startsWith('/social-responsibilities');
-  }
+  // isDropdownLinkActive(): boolean {
+  //   const currentUrl = this.router.url;
+  //   return currentUrl.startsWith('/about-us') || currentUrl.startsWith('/management-team') || currentUrl.startsWith('/saudization-training') || currentUrl.startsWith('/social-responsibilities');
+  // }
 }
