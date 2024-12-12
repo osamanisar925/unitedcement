@@ -36,6 +36,44 @@ header {
 
 }
 
+.dropdown-full-width{
+    position: static !important;
+    .dropdown-menu {
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 0px;
+        border: none;
+        background-color: white;
+        padding-block: 28px;
+        box-shadow: 1px 1px 18px -12px black;
+        left: 0px;
+        top: 100%;
+        .menu-items{
+            list-style: none;
+            padding: 0px;
+            .dropdown-item{
+                padding-block: 10px;
+                padding-inline: 0px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                white-space: pre-wrap;
+                text-wrap: normal;
+                &.active{
+                    background-color: white ;
+                    color: $primary;
+                    border-bottom: 2px solid $primary;
+                    font-weight: 600;
+                }
+                &:active{
+                    background-color: white;
+                    color: $primary;
+                    border-bottom: 2px solid $primary;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1200px) {
     header {
         .navbar-nav {

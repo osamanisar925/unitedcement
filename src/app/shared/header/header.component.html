@@ -1,4 +1,4 @@
-<header class="header py-2 w-100">
+<header class="header pt-2 pb-xl-0 pb-2 w-100 position-relative">
     <div class="container">
         <div class="header-top position-relative mb-2">
 
@@ -27,7 +27,7 @@
             <img class="header-logo d-flex" src="assets/images/logo.svg" alt="">
         </div>
         <div class="header-bottom">
-            <nav class="navbar navbar-dark navbar-expand-xl">
+            <nav class="navbar navbar-dark navbar-expand-xl position-static py-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -55,29 +55,43 @@
                 </div>
                 <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center px-0">
-                        <li class="nav-item">
+
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link" routerLink="/landing-page" routerLinkActive="active"
                                 aria-current="page">{{'headerButtons.home' | translate}}</a>
                         </li>
-                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('about',true)"
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width" (mouseenter)="toggleDropdown('about',true)"
                             (mouseleave)="toggleDropdown('about',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false"
                                 [ngClass]="{'active': isDropdownLinkActive()}">
                                 {{'headerButtons.about' | translate}}
                             </a>
-                            <ul class="dropdown-menu" [ngClass]="{'show': isAboutDropdownVisible}">
-                                <li><a class="dropdown-item" routerLink="/about-us" routerLinkActive="active">About
-                                        Us</a></li>
-                                <li><a class="dropdown-item" routerLink="/management-team"
-                                        routerLinkActive="active">Board Members</a></li>
-                                <li><a class="dropdown-item" routerLink="/saudization-training"
-                                        routerLinkActive="active">Saudization & Training</a></li>
-                                <li><a class="dropdown-item" routerLink="/social-responsibilities"
-                                        routerLinkActive="active">Social Responsibilities & Enviromental Protection</a>
-                                </li>
-                            </ul>
+                            <div class="dropdown-menu" [ngClass]="{'show': isAboutDropdownVisible}">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xl-3">
+                                            <img class="img-fluid" src="assets/images/menu-image.png" alt="">
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <ul class="menu-items">
+                                                <li><a class="dropdown-item" routerLink="/about-us"
+                                                        routerLinkActive="active">About
+                                                        Us</a></li>
+                                                <li><a class="dropdown-item" routerLink="/management-team"
+                                                        routerLinkActive="active">Board Members</a></li>
+                                                <li><a class="dropdown-item" routerLink="/saudization-training"
+                                                        routerLinkActive="active">Saudization & Training</a></li>
+                                                <li><a class="dropdown-item" routerLink="/social-responsibilities"
+                                                        routerLinkActive="active">Social Responsibilities & Enviromental
+                                                        Protection</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('clients',true)"
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown" (mouseenter)="toggleDropdown('clients',true)"
                             (mouseleave)="toggleDropdown('clients',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.clients' | translate}}
@@ -86,19 +100,19 @@
                                 <li><a class="dropdown-item">Client Registration</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link" routerLink="/products"
                                 routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
                                 | translate}}</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link" routerLink="/quality-assurance"
                                 routerLinkActive="active">{{'headerButtons.qualityAssurance' | translate}}</a>
                         </li>
-                        <li class="nav-item dropdown" (mouseenter)="toggleDropdown('vendors',true)"
+                        <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown" (mouseenter)="toggleDropdown('vendors',true)"
                             (mouseleave)="toggleDropdown('vendors',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
                                 {{'headerButtons.vendors' | translate}}
@@ -109,10 +123,10 @@
                                 <li><a class="dropdown-item">Vendor Registration</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link">{{'headerButtons.news' | translate}}</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
                             <a class="nav-link">{{'headerButtons.career' | translate}}</a>
                         </li>
                     </ul>
