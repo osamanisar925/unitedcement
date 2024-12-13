@@ -63,7 +63,7 @@
                         <li class="nav-item pt-2 pb-xl-3 pb-2 dropdown dropdown-full-width"
                             (mouseenter)="toggleDropdown('about',true)" (mouseleave)="toggleDropdown('about',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
-                                {{'headerButtons.about' | translate}}
+                                {{'headerButtons.aboutDropdown.about' | translate}}
                             </a>
                             <div class="dropdown-menu" [ngClass]="{'show': isAboutDropdownVisible}">
                                 <div class="container">
@@ -74,15 +74,13 @@
                                         <div class="col-xl-5">
                                             <ul class="menu-items">
                                                 <li><a class="dropdown-item" routerLink="/about-us"
-                                                        routerLinkActive="active">About
-                                                        Us</a></li>
+                                                        routerLinkActive="active">{{'headerButtons.aboutDropdown.aboutUs' | translate}}</a></li>
                                                 <li><a class="dropdown-item" routerLink="/management-team"
-                                                        routerLinkActive="active">Board Members</a></li>
+                                                        routerLinkActive="active">{{'headerButtons.aboutDropdown.boardMembers' | translate}}</a></li>
                                                 <li><a class="dropdown-item" routerLink="/saudization-training"
-                                                        routerLinkActive="active">Saudization & Training</a></li>
+                                                        routerLinkActive="active">{{'headerButtons.aboutDropdown.saudizationTraining' | translate}}</a></li>
                                                 <li><a class="dropdown-item" routerLink="/social-responsibilities"
-                                                        routerLinkActive="active">Social Responsibilities & Enviromental
-                                                        Protection</a>
+                                                        routerLinkActive="active">{{'headerButtons.aboutDropdown.socialResponsibilities' | translate}}</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -94,7 +92,7 @@
                             (mouseenter)="toggleDropdown('clients',true)"
                             (mouseleave)="toggleDropdown('clients',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
-                                {{'headerButtons.clients' | translate}}
+                                {{'headerButtons.clientsDropdown.clients' | translate}}
                             </a>
                             <div class="dropdown-menu" [ngClass]="{'show': isClientsDropdownVisible}">
                                 <div class="container">
@@ -104,7 +102,7 @@
                                         </div>
                                         <div class="col-xl-5">
                                             <ul class="menu-items">
-                                                <li><a class="dropdown-item">Client Registration</a></li>
+                                                <li><a class="dropdown-item">{{'headerButtons.clientsDropdown.clientsRegistration' | translate}}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -127,7 +125,7 @@
                             (mouseenter)="toggleDropdown('vendors',true)"
                             (mouseleave)="toggleDropdown('vendors',false)">
                             <a class="nav-link dropdown-toggle" aria-expanded="false">
-                                {{'headerButtons.vendors' | translate}}
+                                {{'headerButtons.vendorsDropdown.vendors' | translate}}
                             </a>
                             <div class="dropdown-menu" [ngClass]="{'show': isVendorsDropdownVisible}">
                                 <div class="container">
@@ -138,9 +136,8 @@
                                         <div class="col-xl-5">
                                             <ul class="menu-items">
                                                 <li><a class="dropdown-item" routerLink="/vendors"
-                                                        routerLinkActive="active">Our
-                                                        Vendors</a></li>
-                                                <li><a class="dropdown-item">Vendor Registration</a></li>
+                                                        routerLinkActive="active">{{'headerButtons.vendorsDropdown.ourVendors' | translate}}</a></li>
+                                                <li><a class="dropdown-item">{{'headerButtons.vendorsDropdown.vendorRegistration' | translate}}</a></li>
                                             </ul>
                                         </div>
                                     </div>

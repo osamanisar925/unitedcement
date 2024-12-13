@@ -23,7 +23,7 @@
 
 .ceo-image {
     position: absolute;
-    top: -103px;
+    bottom: -24px;
     left: -25px;
 
     img {
@@ -76,8 +76,9 @@
 
     .ceo-image {
         position: relative;
-        top: 0px;
+        bottom: 0px;
         left: 0px;
+        margin-bottom: 18px;
     }
 }
 

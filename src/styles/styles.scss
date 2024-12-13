@@ -139,6 +139,15 @@ a {
     align-items: center;
 }
 
+@media screen and (min-width:1200px) {
+
+    .direction-rtl{
+        .text-arabic-right{
+            text-align: right !important;
+        }
+    }
+}
+
 @media screen and (max-width:1200px) {
 
     .gray-box,

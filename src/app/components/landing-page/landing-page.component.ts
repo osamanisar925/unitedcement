@@ -32,7 +32,7 @@ export class LandingPageComponent {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 200000,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 800,
@@ -51,9 +51,10 @@ export class LandingPageComponent {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
+          } 
+          // else {
+          //   entry.target.classList.remove('show');
+          // }
         });
       }, { threshold: 0.5 });
 

@@ -2,11 +2,24 @@
     "headerButtons": {
         "home": "Home",
         "shop": "Shop",
-        "about": "About",
-        "clients": "Clients",
+        "aboutDropdown": {
+            "about": "About",
+            "aboutUs": "About Us",
+            "boardMembers": "Board Members",
+            "saudizationTraining": "Saudization & Training",
+            "socialResponsibilities": "Social & Environmental Responsibility"
+        },
+        "clientsDropdown": {
+            "clients": "Clients",
+            "clientsRegistration": "Clients Registration"
+        },
         "products": "Products",
         "qualityAssurance": "Quality Assurance",
-        "vendors": "Vendors",
+        "vendorsDropdown": {
+            "vendors": "Vendors",
+            "ourVendors": "Our Vendors",
+            "vendorRegistration": "Vendors Registration"
+        },
         "news": "News",
         "career": "Career",
         "lang": "العربية"
@@ -20,7 +33,7 @@
             "product_4": "TAMEER FINISHING CEMENT (TFC)"
         },
         "section2": {
-            "aboutUsTitle": "ABOUT US",
+            "aboutUcicTitle": "ABOUT UCIC",
             "aboutUsDescription": "The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 millions tones of cement per year that will meet the needs of our customers",
             "msgCeoTitle": "MESSAGE FROM THE CEO",
             "msgCeoDescription": "United Cement Industrial Company  (UCIC) had the privilege to be supported by the Government of the Custodian of the Two Holy Mosques, by gaining a concession building permit in Al Lith city to manufacture different types of cement that matches the Global…",
@@ -28,19 +41,19 @@
         },
         "section3": {
             "title": "OUR PRODUCTS",
-            "product_1":{ 
+            "product_1": {
                 "title": "PORTLAND POZZOLANA CEMENT (PPC)",
                 "description": "Portland Pozzolana Cement is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
             },
-            "product_2":{ 
+            "product_2": {
                 "title": "SULPHATE RESISTANT CEMENT (SRC)",
                 "description": "SULPHATE RESISTANT CEMENT (SRC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
             },
-            "product_3":{ 
+            "product_3": {
                 "title": "ORDINARY PORTLAND CEMENT (OPC)",
                 "description": "ORDINARY PORTLAND CEMENT (OPC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
             },
-            "product_4":{ 
+            "product_4": {
                 "title": "TAMEER FINISHING CEMENT (TFC)",
                 "description": "TAMEER FINISHING CEMENT (TFC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions."
             },
@@ -51,8 +64,120 @@
             "description": "UCIC decided to select the best machinaries with high quality and safety. thus, all major equipments are european origin. The whole plant is operated from one control room an auto mode without human intervention except in rare cases"
         },
         "section5": {
-            "title": "United Cement Mobile APPS"
+            "title": "United Cement Mobile APPS",
+            "description": "Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin panel for your SaaS."
+        },
+        "section6": {
+            "title": "Saudization",
+            "description": "Strategy of United Cement based in employment on the serious investment in the national manpower, and through a number of foundations and programs including:",
+            "readMore": "Read More",
+            "saudiPriority": {
+                "title": "Saudi Priority",
+                "description": "UCIC in its employment policies is committed to give a priority in the recruitment to talented Saudi citizens."
+            },
+            "specialNeeds": {
+                "title": "Special Needs",
+                "description": "As a part of its social responsibility, UCIC is giving a number of special needs employment opportunities and try to prepare the appropriate environment for them from health and social prospectives, in order to enable them to actively participate in the company success."
+            },
+            "partnershipTechnical": {
+                "title": "Partnership with technical institute to attract graduate",
+                "description": "UCIC is investing in long-term strategic relationship with a number of technical and vocational colleges in Makkah Region, and participating in annual career fairs to secure its needs of qualified cadres."
+            },
+            "maintainingHighest": {
+                "title": "Maintaining Highest Saudization Percentage",
+                "description": "UCIC has maintained since its inception a high Saudization Percentage (not less than 65% of total company employees), UCIC aims to increase Saudization percentage to be aligned with its strategic direction into investment in the Saudi youth which enable the company since its inception to maintain a platinum range in the Nationalization."
+            }
         }
+    },
+    "aboutUs": {
+        "title": "ABOUT US",
+        "section1": {
+            "commercialNumber": "The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 million tonnes of cement annually that will meet the needs of our customers.",
+            "messageFrom": "MESSAGE FROM THE ",
+            "ceo": "CEO",
+            "ceoName": "Mohammad Almatrafi",
+            "description": "United Cement Industrial Company (UCIC) proudly operates under the support of the Custodian of the Two Holy Mosques, with a concession building permit in Al Lith to produce high-quality cement that meets global standards. The company ensures an adequate fuel supply based on global performance indicators. With a strong sense of national duty, UCIC prioritizes employing and working with citizens—whether as employees, contractors, or suppliers—and boasts nearly 100% Saudi leadership since its establishment in 2013. We take pride in being platinum-ranked and in fostering development through continuous training locally and globally, believing that human resources are key to progress. Aligned with Vision 2030, UCIC focuses on efficiency and competitiveness in all technical and administrative operations. We pray for continued success to contribute to the nation's growth and development."
+        },
+        "section2": {
+            "vision": {
+                "title": "Vision",
+                "description": "Aiming to be the most efficient and effective cement producer in Saudi Arabia, we focus on optimizing operations and adopting innovative practices to enhance quality."
+            },
+            "mission": {
+                "title": "Mission",
+                "description": "Creating additional values in Saudi Cement Industry through innovative and sustainable using of the natural resources in order to serve our society and our Customers"
+            }
+        },
+        "section3": {
+            "title": "CORE VALUES",
+            "description": "The company aimed to create a supportive environment that offers employees prestige and gratitude, which enables them to release energies and bring out capabilities. Our human resources department is working in framework of a set of values; the most important ones included are:",
+            "ownership": {
+                "title": "Ownership",
+                "description": "All of us in the United Cement Company are dealing with a sense of “owners”, and we are treated accordingly."
+            },
+            "integrity": {
+                "title": "Integrity",
+                "description": "Conserving conﬁdentiality and professionalism, in addition to treating others in respect, honesty and equity."
+            },
+            "accountability": {
+                "title": "Accountability",
+                "description": "We bear the personal and professional responsibility of results of our works, in association with keeping up the high-level performance."
+            },
+            "teamwork": {
+                "title": "Teamwork spirit",
+                "description": "Honest and trust worthy communicating, with constructive spirit and methodology that supports exchange of thoughts and resources."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "Encouraging and embracing the real change, seeking distinguish and improvement knowledge and skills."
+            }
+        }
+    },
+    "boardMembers": {
+        "title": "BOARD MEMBERS",
+        "beforeName": "MR.",
+        "members": [
+            {
+                "name": "FAHED ABDULLAH ALHARBI",
+                "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "ABDULKARIM IBRAHIM ALNAFEA",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "NASER ABDULLAH ALAWFI",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "ABDULRAHMAN HAMEED ALAWFI",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "YAZED MOHAMMED ALTWYJRI",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "SULAIMAN BIN DARI RASHID",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "FAYEZ ABDULLAH ALHARBI",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com"
+            },
+            {
+                "name": "MOHAMMAD ALMATRAFI",
+                "designation": "CEO",
+                "email": "drewcano@gmail.com"
+            }
+        ]
     },
     "footer": {
         "quickLinks": {
