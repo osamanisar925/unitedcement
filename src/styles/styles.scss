@@ -139,6 +139,12 @@ a {
     align-items: center;
 }
 
+.direction-rtl{
+    .text-arabic-right-permanent{
+        text-align: right !important;
+    }
+}
+
 @media screen and (min-width:1200px) {
 
     .direction-rtl{

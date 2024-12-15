@@ -102,7 +102,7 @@
                                         </div>
                                         <div class="col-xl-5">
                                             <ul class="menu-items">
-                                                <li><a class="dropdown-item">{{'headerButtons.clientsDropdown.clientsRegistration' | translate}}</a></li>
+                                                <li><a class="dropdown-item" (click)="openComingSoon('Clients Registration')">{{'headerButtons.clientsDropdown.clientsRegistration' | translate}}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -114,7 +114,8 @@
                                 routerLinkActive="active">{{'headerButtons.products' | translate}}</a>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
-                            <a class="nav-link" routerLink="/shopping" routerLinkActive="active">{{'headerButtons.shop'
+                            <!-- routerLink="/shopping" routerLinkActive="active"  -->
+                            <a class="nav-link" (click)="openComingSoon('Shop')">{{'headerButtons.shop'
                                 | translate}}</a>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
@@ -137,7 +138,7 @@
                                             <ul class="menu-items">
                                                 <li><a class="dropdown-item" routerLink="/vendors"
                                                         routerLinkActive="active">{{'headerButtons.vendorsDropdown.ourVendors' | translate}}</a></li>
-                                                <li><a class="dropdown-item">{{'headerButtons.vendorsDropdown.vendorRegistration' | translate}}</a></li>
+                                                <li><a class="dropdown-item"  (click)="openComingSoon('Vendor Registration')">{{'headerButtons.vendorsDropdown.vendorRegistration' | translate}}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -145,10 +146,10 @@
                             </div>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
-                            <a class="nav-link">{{'headerButtons.news' | translate}}</a>
+                            <a class="nav-link" (click)="openComingSoon('News')">{{'headerButtons.news' | translate}}</a>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
-                            <a class="nav-link">{{'headerButtons.career' | translate}}</a>
+                            <a class="nav-link" (click)="openComingSoon('Career')">{{'headerButtons.career' | translate}}</a>
                         </li>
                     </ul>
                 </div>

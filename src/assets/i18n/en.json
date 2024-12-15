@@ -179,6 +179,196 @@
             }
         ]
     },
+    "saudizationTraining": {
+        "title": "SAUDIZATION AND TRAINING",
+        "section1": {
+            "title": "Saudization",
+            "description": "Strategy of United Cement based in employment on the serious investment in the national manpower, and through a number of foundations and programs including:",
+            "saudizationPoints": [
+                {
+                    "title": "Saudi Priority",
+                    "description": "UCIC in its employment policies is committed to give a priority in the recruitment to talented Saudi citizens."
+                },
+                {
+                    "title": "Special Needs",
+                    "description": "As a part of its social responsibility, UCIC is giving a number of special needs employment opportunities and try to prepare the appropriate environment for them from health and social prospectives, in order to enable them to actively participate in the company success."
+                },
+                {
+                    "title": "Partnership with technical institute to attract graduate",
+                    "description": "UCIC is investing in long-term strategic relationship with a number of technical and vocational colleges in Makkah Region, and participating in annual career fairs to secure its needs of qualified cadres."
+                },
+                {
+                    "title": "Maintaining Highest Saudization Percentage",
+                    "description": "UCIC has maintained since its inception a high Saudization Percentage (not less than 65% of total company employees), UCIC aims to increase Saudization percentage to be aligned with its strategic direction into investment in the Saudi youth which enable the company since its inception to maintain a platinum range in the Nationalization."
+                }
+            ]
+        },
+        "section2": {
+            "title": "Training",
+            "description": "UCIC believes that its success is largely dependent in the ﬁrst place on how efﬁcient and professional is its workforce, so it is consistently providing its employees with a package of internal and external training programs designed to upgrade their knowledge and skills in a way that helps them to live up to the highest standards of technical and administrative performance expected, UCIC training strategy in includes number of initiatives from:",
+            "trainingPoints": [
+                {
+                    "title": "On site training",
+                    "description": "The company is providing an equipped training facility in its factory site in Tafel, which offers different courses in: computer, English, technical and administrative training in order to contribute in the development and the improvement of the workforce skills, the training will be extended to reach the people of the province and give them the opportunity to enhance their professional capabilities.",
+                    "image": "assets/images/saudization_training/training_1.png",
+                    "reverse": "false"
+                },
+                {
+                    "title": "External training programs",
+                    "description": "Where the company sends its staff to specialized training centers inside and outside the Kingdom, so as to increase their knowledge and improve their skills in various fields of technical training, such as (for Electricity Mechanics - Production - Safety - precision machining, etc.) so that it includes theoretical training and field.",
+                    "image": "assets/images/saudization_training/training_2.png",
+                    "reverse": "true"
+                },
+                {
+                    "title": "The Orientation Program",
+                    "description": "This program is designed to enhance the work behavior desired in UCIC environment, the program includes the initial basic information about the job specification as well as UCIC in general polices such as: company vision and mission - internal regulations - Organizational structure - training programs - career programs -Compensation and benefits and others.",
+                    "image": "assets/images/saudization_training/training_3.png",
+                    "reverse": "false"
+                },
+                {
+                    "title": "Attendance of internal and external conferences",
+                    "description": "UCIC is sending number of its employees to attend local, regional and international conferences in the cement industry, in order to take advantage of opportunities to learn new and both regional and global best practices. As give the participants the opportunity to meet number of the industry experts locally and internationally.",
+                    "image": "assets/images/saudization_training/training_4.png",
+                    "reverse": "true"
+                },
+                {
+                    "title": "Cement companies field visits",
+                    "description": "UCIC organizes number of periodic visits to cement factories in KSA, the program is designed to give the participant the opportunities to see the industry practice, during these visits, a number of workshops is to be held to document and discuss the most important insights.",
+                    "image": "assets/images/saudization_training/training_5.png",
+                    "reverse": "false"
+                },
+                {
+                    "title": "Internal training programs",
+                    "description": "UCIC with the help of its senior employees is designing number of internal programs as to be given to the junior colleagues and the fresh employees in the company. The aim of such programs are to promote the knowledge transfer to the newly appointed staff in the company, and the main focus of the training is to develop daily operational business skills such as: problem solving, and improving the analytical capabilities as well as other skills...",
+                    "image": "assets/images/saudization_training/training_6.png",
+                    "reverse": "true"
+                }
+            ]
+        }
+    },
+    "socialResponsibility": {
+        "title": "SOCIAL & ENVIRONMENTAL RESPOSIBILITY",
+        "section1": {
+            "title": "Social Resposibilities",
+            "description": "Seeking company strives to be a party contributor in all social initiatives that serve the region and the events, such as the continued support of education, cultural and social activities in the region in addition to the posts of local and international conferences."
+        },
+        "section2": {
+            "title": "Environmental Protection",
+            "description": "The factory was established on latest cement industry technology as well as the pursuit of the United Cement industrial Company since the beginning of production to achieve the highest environmental standard for the environment. The company launched many environmental initiatives that contributes in creating clean environment, including:",
+            "environmentalPoints": [
+                {
+                    "point": "The Factory is designed to be heating tower with six stages, which reduce energy consumption and fossil fuel"
+                },
+                {
+                    "point": "Production of Portland Pozzolana Cement"
+                },
+                {
+                    "point": "Planting thousands of trees in the factory"
+                },
+                {
+                    "point": "Using processed sewage water for plants and cooling"
+                },
+                {
+                    "point": "Using the solar energy for lighting some factory roads."
+                }
+            ]
+        }
+    },
+    "products_page": {
+        "section1": {
+            "title": "What is cement",
+            "description1": "Cement is hydraulic binder, i.e a finely ground inorganic material which, when mixed with water, forms a paste which set and hardens by means of hydration reactions and processes and which after hardening , retains its strength and stability even under water.",
+            "description2": "The United Cement Company is characterized by the production of high-quality cement products and the raw materials does not contain anything of all the impurities that have a direct impact on cement products including alkali, Chlorides, Sulphates, Potassium and Sodium in addition to the company quarry is located in part of Sarawat Mountains that are known of its high-quality raw materials. In addition, there is an automated monitors of production line which takes 100 samples a day to make sure that the products have high quality, the company assures it is high quality by sending products to local & international institutes to confirm it is high quality."
+        },
+        "products": [
+            {
+                "badge": "OPC",
+                "title": "Ordinary Portland Cement",
+                "description": "Portland cement (often referred to as OPC, from Ordinary Portland Cement) is the most common type of cement in general use around the world,",
+                "product_img": "assets/images/products/product_1_cement.png",
+                "application": "Mixes ordinary reinforced concrete, which does not require special types of cement that need to withstand high strength.",
+                "examples": [
+                    "Ready-mixed concrete",
+                    "Bases and foundations",
+                    "Concrete preparation in cold weather",
+                    "Bridges and build towers",
+                    "Concrete roads",
+                    "Protected areas"
+                ],
+                "applicationLabel": "Application",
+                "exampleLabel": "Example of use:"
+            },
+            {
+                "badge": "PPC",
+                "title": "Portland Pozzolana Cement",
+                "description": "Portland Pozzolana Cement is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.",
+                "product_img": "assets/images/products/product_2_cement.png",
+                "application": "This type of cement distinct because of its specifications differ from other types of cement is made up of (70% -80%) Portland cement plus (15-20%) Pozzolana a black (volcanic) materials hundred percent natural silicon and aluminum, taken from volcanic mountains not directly exposed to any interactions or chemical additives therefore advised to use where there is any damage or disadvantages of the various uses and which gives it self great value advanced.",
+                "examples": [
+                    "Factories of all kinds of Bricks Block.",
+                    "Concrete pipe exposed to water with a high percentage of Sulphate (water marshes and sewage)",
+                    "Small sewage plants.",
+                    "Small Bridges which is constructed to control the flood water in areas where the soil contains a high concentration of free Sulphate and silica."
+                ],
+                "characteristics": [
+                    "Plays a role in making the mixture of cement, elastic and flexible (interior and exterior finishes).",
+                    "Reduces the heat generated from the first phase of water is added",
+                    "Can prevent the alkali blocks interaction",
+                    "Reduces the permeability of cement due to its high smoothness.",
+                    "Improve the properties of plastics and cohesion (suitable for cement painting).",
+                    "Thermal insulation (saving electric power for lighting and air conditioners) consumption Noise absorption and helps in sound insulation reduces sound",
+                    "Increases the fire resistance ability due to the containment Pozzolananational silica and alumina, it can withstand high temperatures.",
+                    "Health- friendly material is not harmful to the environment natural materials do not contain organic materials and has no smell and does not export.",
+                    "Resistance to salts construction which carried out on the nearby salt water seashores or rich soil of soluble salts, which do not require bearing high.",
+                    "Resistance to weather changing with time passing ancient and historical constructions consist of volcanic source rocks, especially very old Romanian."
+                ],
+                "applicationLabel": "Application",
+                "exampleLabel": "Example of use:",
+                "characteristicsLabel": "The characteristics and advantages:"
+            },
+            {
+                "badge": "SRC",
+                "title": "Sulphate Resistant Cement",
+                "description": "Sulphate Resisting Portland Cement is a type of Portland cement in which the amount of Tricalcium aluminate (C3A) is restricted to lower than 5 % and (2 C3A + C4AF) is lower than 25%.",
+                "product_img": "assets/images/products/product_3_cement.png",
+                "application": "This type of cement is different from the rest of the other types, to distinguish low aluminate content tri-calcium aluminate ratio which is responsible for interaction with the Sulphate ions in the soil or water which prevents volume increasing of concrete and the occurrence of cracks in areas where the soil contains a high proportion of Sulphate.",
+                "examples": [
+                    "Concrete pipe exposed to water with a high percentage of Sulphate water marshes and sewage.",
+                    "Marine works such as ports and platforms.",
+                    "Bases and foundations that need to withstand high power.",
+                    "Sewage plants (bases of construction and foundations)."
+                ],
+                "applicationLabel": "Application",
+                "exampleLabel": "Example of use:"
+            },
+            {
+                "badge": "TFC",
+                "title": "Tameer Finishing Cement",
+                "description": "TAMEER FINISHING CEMENT (TFC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.",
+                "product_img": "assets/images/products/product_4_cement.png",
+                "application": "All types and activities of finishing works Plaster, render and grout. Mortar for masonry and repair work.",
+                "examples": [
+                    "Ready-mixed concrete",
+                    "Bases and foundations",
+                    "Concrete preparation in cold weather",
+                    "Bridges and build towers",
+                    "Concrete roads",
+                    "Protected areas"
+                ],
+                "applicationLabel": "Application",
+                "exampleLabel": "Example of use:"
+            }
+        ]
+    },
+    "qualityAssurance": {
+        "title": "QUALITY ASSURANCE",
+        "certificationLabel": "Our Certifications",
+        "achievementLabel": "Our Acheivements"
+    },
+    "vendors": {
+        "title": "VENDORS",
+        "ourVendors": "Our Vendors"
+    },
     "footer": {
         "quickLinks": {
             "heading": "Quick Links",

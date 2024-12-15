@@ -3,6 +3,8 @@ import {Component, inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../services/language/language.service';
+import { ComingSoonComponent } from '../../components/coming-soon/coming-soon.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +17,7 @@ export class HeaderComponent {
   translate: TranslateService = inject(TranslateService);
   currentLang = localStorage.getItem('lang') ?? this.translate.currentLang;
   languageService = inject(LanguageService);
+  private readonly modalService = inject(NgbModal)
   private readonly router = inject(Router);
 
   isAboutDropdownVisible = false;
@@ -48,4 +51,10 @@ export class HeaderComponent {
   //   const currentUrl = this.router.url;
   //   return currentUrl.startsWith('/about-us') || currentUrl.startsWith('/management-team') || currentUrl.startsWith('/saudization-training') || currentUrl.startsWith('/social-responsibilities');
   // }
+
+    openComingSoon(heading: string) {
+      const modalRef = this.modalService.open(ComingSoonComponent, { size: 'xl', centered: true, backdrop: true, keyboard: true });
+      modalRef.componentInstance.heading = heading;
+    }
+    
 }

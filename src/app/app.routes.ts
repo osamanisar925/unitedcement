@@ -7,6 +7,7 @@ import { SocialResponsibilitiesComponent } from './components/social-responsibil
 import { ProductsComponent } from './components/products/products.component';
 import { QualityAssuranceComponent } from './components/quality-assurance/quality-assurance.component';
 import { VendorsComponent } from './components/vendors/vendors.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 export const routes: Routes = [
     { path: 'landing-page', component: LandingPageComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'social-responsibilities', component: SocialResponsibilitiesComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'quality-assurance', component: QualityAssuranceComponent },
+    { path: 'coming-soon', component: ComingSoonComponent },
     { path: 'vendors', component: VendorsComponent },
     {
         path: 'shopping',
