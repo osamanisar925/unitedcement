@@ -1,13 +1,11 @@
 <section class="shop-banner">
-    <div class="blue-box text-center">SOCIAL & ENVIRONMENTAL RESPOSIBILITY</div>
+    <div class="blue-box text-center">{{'socialResponsibility.title' | translate}}</div>
 </section>
 
 <section class="social-responsibilities py-100">
     <div class="container">
-        <h2 class="text-center text-primary fw-semibold">Social Resposibilities</h2>
-        <p class="text-center text-gray fs-5 mb-5">Seeking company strives to be a party contributor in all social
-            initiatives that serve the region and the events, such as the continued support of education, cultural and
-            social activities in the region in addition to the posts of local and international conferences.</p>
+        <h2 class="text-center text-primary fw-semibold">{{'socialResponsibility.section1.title' | translate}}</h2>
+        <p class="text-center text-gray fs-5 mb-5">{{'socialResponsibility.section1.description' | translate}}</p>
         <img src="assets/images/social-responsibilities/saudi-meeting.png" class="img-fluid"
             alt="close-up-people-working-office"/>
     </div>
@@ -16,13 +14,16 @@
 
 <section class="environmental-protection">
     <div class="container text-center">
-        <h2 class="text-white fw-bold">Environmental Protection</h2>
-        <p class="text-white">The factory was established on latest cement industry technology as well as the pursuit of
-            the United Cement industrial Company since the beginning of production to achieve the highest environmental
-            standard for the environment. The company launched many environmental initiatives that contributes in
-            creating clean environment, including:</p>
+        <h2 class="text-white fw-bold">{{'socialResponsibility.section2.title' | translate}}</h2>
+        <p class="text-white">{{'socialResponsibility.section2.description' | translate}}</p>
         <div class="row margin-top-negative">
-            <div class="col-lg mb-3">
+            <div class="col mb-3" *ngFor="let points of ('socialResponsibility.section2.environmentalPoints' | translate) let i = index">
+                <div class="enviromental-points">
+                    <h4>{{i+1}}</h4>
+                    <p>{{points.point}}</p>
+                </div>
+            </div>
+            <!-- <div class="col-lg mb-3">
                 <div class="enviromental-points">
                     <h4>1</h4>
                     <p>The Factory is designed to be heating tower with six stages, which reduce energy consumption and fossil fuel</p>
@@ -51,7 +52,7 @@
                     <h4>5</h4>
                     <p>Using the solar energy for lighting some factory roads</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .video-section {
-    height: 100vh;
+    height: calc(100vh - 147px);
     min-height: 650px;
     position: relative;
     padding-top: 215px;
@@ -233,6 +233,7 @@
 
     .video-section {
         padding-top: 0px;
+        height: calc(100vh - 100px);
 
         .content {
             gap: 7rem;

@@ -1,16 +1,8 @@
 <section class="py-100 hero-banner">
     <div class="container">
-        <h1 class="text-center fw-semibold text-white mb-3">What is cement</h1>
-        <p class="text-white text-center">Cement is hydraulic binder, i.e a finely ground inorganic material which, when mixed with water, forms a
-            paste which set and hardens by means of hydration reactions and processes and which after hardening ,
-            retains its strength and stability even under water.</p>
-        <p class="text-white text-center mb-5">The United Cement Company is characterized by the production of high-quality cement products and the raw
-            materials does not contain anything of all the impurities that have a direct impact on cement products
-            including alkali, Chlorides, Sulphates, Potassium and Sodium in addition to the company quarry is located in
-            part of Sarawat Mountains that are known of its high-quality raw materials. In addition, there is an
-            automated monitors of production line which takes 100 samples a day to make sure that the products have high
-            quality, the company assures it is high quality by sending products to local & international institutes to
-            confirm it is high quality.</p>
+        <h1 class="text-center fw-semibold text-white mb-3">{{'products_page.section1.title'| translate}}</h1>
+        <p class="text-white text-center">{{'products_page.section1.description1'| translate}}</p>
+        <p class="text-white text-center mb-5">{{'products_page.section1.description2'| translate}}</p>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <img src="assets/images/products/hero-image.png" class="img-fluid w-100" alt="">
@@ -18,170 +10,40 @@
         </div>
     </div>
 </section>
-
-<section class="product_section opc_product">
+<section class="product_section " *ngFor="let product of ('products_page.products' | translate) let i = index"
+    [ngClass]="{'opc_product': (product.badge == 'OPC'||product.badge =='النوع الأول'), 'ppc_product': (product.badge == 'PPC' || product.badge == 'النوع الثالث'), 'src_product': (product.badge == 'SRC' || product.badge == 'النوع الثاني'), 'tfc_product': product.badge == 'TFC'}">
     <div class="container">
         <div class="d-flex align-items-center flex-column mb-5">
             <div class="badge rounded-pill">
-                <h2 class="mb-0 fw-bold">OPC</h2>
+                <h2 class="mb-0 fw-bold">{{product.badge}}</h2>
             </div>
-            <h1 class="product-heading fw-semibold">Ordinary Portland Cement</h1>
-            <p class="product-description">ORDINARY PORTLAND CEMENT (OPC) is a kind of Blended Cement which is produced
-                by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.</p>
+            <h1 class="product-heading fw-semibold">{{product.title}}</h1>
+            <p class="product-description">{{product.description}}</p>
         </div>
-        <div class="uses">
+        <div class="uses" [ngClass]="{'mb-0' : product.badge == 'PPC'}">
             <div class="row justify-content-between">
                 <div class="col-xl-3">
                     <div class="applicaton">
-                        <h5 class="fw-bold">Application</h5>
-                        <p class="text-gray mb-0">mixes ordinary reinforced concrete, which do not require special types of cement that need to withstand high strength.</p>
+                        <h5 class="fw-bold">{{product.applicationLabel}}</h5>
+                        <p class="text-gray mb-0">{{product.application}}</p>
                     </div>
                 </div>
                 <div class="col-xl-6 product-image">
-                    <img src="assets/images/products/product_1_cement.png" class="img-fluid my-xl-0 my-4" alt="">
+                    <img src="{{product.product_img}}" class="img-fluid my-xl-0 my-4" alt="">
                 </div>
                 <div class="col-xl-3">
                     <div class="example">
-                        <h5 class="fw-bold">Example of use:</h5>
+                        <h5 class="fw-bold">{{product.exampleLabel}}</h5>
                         <ul class="text-gray mb-0">
-                            <li>Ready-mixed concrete</li>
-                            <li>Bases and foundations</li>
-                            <li>Concrete preparation in cold weather</li>
-                            <li>Bridges and build towers</li>
-                            <li>Concret Roads</li>
-                            <li>Protected</li>
+                            <li *ngFor="let example of product.examples">{{example}}</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="product_section ppc_product">
-    <div class="container">
-        <div class="d-flex align-items-center flex-column mb-5">
-            <div class="badge rounded-pill">
-                <h2 class="mb-0 fw-bold">PPC</h2>
-            </div>
-            <h1 class="product-heading fw-semibold">Portland Pozzolana Cement</h1>
-            <p class="product-description">Portland Pozzolana Cement is a kind of Blended Cement which is produced by
-                inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.</p>
-        </div>
-        <div class="uses">
-            <div class="row justify-content-between">
-                <div class="col-xl-3">
-                    <div class="applicaton">
-                        <h5 class="fw-bold">Application</h5>
-                        <p class="text-gray mb-0">This type of cement distinct because of its specifications differ from other types of cement is made up of (70% -80%) Portland cement plus (15-20%) Pozzolana a black (volcanic) materials hundred percent natural silicon and aluminum, taken from volcanic mountains not directly exposed to any interactions or chemical additives therefore advised to use where there is any damage or disadvantages of the various uses and which gives it self great value advanced.</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 product-image">
-                    <img src="assets/images/products/product_2_cement.png" class="img-fluid my-xl-0 my-4" alt="">
-                </div>
-                <div class="col-xl-3">
+                <div class="col-xl-12 mt-xl-5 mt-2" *ngIf="product.characteristics">
                     <div class="example">
-                        <h5 class="fw-bold">Example of use:</h5>
+                        <h5 class="fw-bold">{{product.characteristicsLabel}}</h5>
                         <ul class="text-gray mb-0">
-                            <li>Factories of all kinds of Bricks Block.</li>
-                            <li>Concrete pipe exposed to water with a high percentage of Sulphate (water marshes and sewage )</li>
-                            <li>Small sewage plants.</li>
-                            <li>Small Bridges which is constructed to control the flood water in areas where the soil contains a high concentration of free Sulphate and silica.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-12 mt-xl-5 mt-2">
-                    <div class="example">
-                        <h5 class="fw-bold">The characteristics and advantages:</h5>
-                        <ul class="text-gray mb-0">
-                            <li>Plays a role in making the mixture of cement, elastic and flexible (interior and exterior finishes).</li>
-                            <li>Reduces the heat generated from the first phase of water is added</li>
-                            <li>Can prevent the alkali blocks interaction</li>
-                            <li>Reduces the permeability of cement due to its high smoothness.</li>
-                            <li>Improve the properties of plastics and cohesion (suitable for cement painting).</li>
-                            <li>Thermal insulation (saving electric power for lighting and air conditioners) consumption Noise absorption and helps in sound insulation reduces sound</li>
-                            <li>Increases the fire resistance ability due to the containment Pozzolananational silica and alumina, it can withstand high temperatures.</li>
-                            <li>Health- friendly material is not harmful to the environment natural materials do not contain organic materials and has no smell and does not export.</li>
-                            <li>Resistance to salts construction which carried out on the nearby salt water seashores or rich soil of soluble salts, which do not require bearing high.</li>
-                            <li>Resistance to weather changing with time passing ancient and historical constructions consist of volcanic source rocks, especially very old Romanian.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="product_section src_product">
-    <div class="container">
-        <div class="d-flex align-items-center flex-column mb-5">
-            <div class="badge rounded-pill">
-                <h2 class="mb-0 fw-bold">SRC</h2>
-            </div>
-            <h1 class="product-heading fw-semibold">Sulphate Resistant Cement </h1>
-            <p class="product-description">SULPHATE RESISTANT CEMENT (SRC) is a kind of Blended Cement which is produced
-                by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.</p>
-        </div>
-        <div class="uses">
-            <div class="row justify-content-between">
-                <div class="col-xl-3">
-                    <div class="applicaton">
-                        <h5 class="fw-bold">Application</h5>
-                        <p class="text-gray mb-0">This type of cement is different from the rest of the other types, to distinguish low aluminate content tri-calcium aluminate ratio which is responsible for interaction with the Sulphate ions in the soil or water which prevents volume increasing of concrete and the occurrence of cracks in areas where the soil contains a high proportion of Sulphate.</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 product-image">
-                    <img src="assets/images/products/product_3_cement.png" class="img-fluid my-xl-0 my-4" alt="">
-                </div>
-                <div class="col-xl-3">
-                    <div class="example">
-                        <h5 class="fw-bold">Example of use:</h5>
-                        <ul class="text-gray mb-0">
-                            <li>Concrete pipe exposed to water with a high percentage of Sulphate water marshes and sewage.</li>
-                            <li>Marine works such as ports and platforms.</li>
-                            <li>Bases and foundations that need to withstand high power.</li>
-                            <li>Sewage plants (bases of construction and foundations).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="product_section tfc_product">
-    <div class="container">
-        <div class="d-flex align-items-center flex-column mb-5">
-            <div class="badge rounded-pill">
-                <h2 class="mb-0 fw-bold">TFC</h2>
-            </div>
-            <h1 class="product-heading fw-semibold">Tameer Finishing Cement</h1>
-            <p class="product-description">TAMEER FINISHING CEMENT (TFC) is a kind of Blended Cement which is produced
-                by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.</p>
-        </div>
-        <div class="uses">
-            <div class="row justify-content-between">
-                <div class="col-xl-3">
-                    <div class="applicaton">
-                        <h5 class="fw-bold">Application</h5>
-                        <p class="text-gray mb-0">All types and activities of finishing works
-                            Plaster, render and grout.
-                            Mortar for masonry and repair work.</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 product-image">
-                    <img src="assets/images/products/product_4_cement.png" class="img-fluid my-xl-0 my-4" alt="">
-                </div>
-                <div class="col-xl-3">
-                    <div class="example">
-                        <h5 class="fw-bold">Example of use:</h5>
-                        <ul class="text-gray mb-0">
-                            <li>Ready-mixed concrete</li>
-                            <li>Bases and foundations</li>
-                            <li>Concrete preparation in cold weather</li>
-                            <li>Bridges and build towers</li>
-                            <li>Concret Roads</li>
-                            <li>protected</li>
+                            <li *ngFor="let characteristic of product.characteristics">{{characteristic}}</li>
                         </ul>
                     </div>
                 </div>

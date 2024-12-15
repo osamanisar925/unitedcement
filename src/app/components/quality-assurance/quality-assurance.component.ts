@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DocumentViewerModalComponent } from '../../shared/modals/document-viewer-modal/document-viewer-modal.component';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-quality-assurance',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './quality-assurance.component.html',
   styleUrl: './quality-assurance.component.scss'
 })
