@@ -58,6 +58,12 @@
     border: 1px solid #BDBDBD;
     overflow: hidden;
     margin-bottom: 50px;
+
+    .card-img-top,
+    .card-img-bottom {
+        height: 600px;
+        object-fit: cover;
+    }
 }
 
 .text-custom-gray {

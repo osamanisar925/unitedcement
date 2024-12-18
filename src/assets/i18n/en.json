@@ -95,7 +95,7 @@
             "commercialNumber": "The United Cement Industrial a Saudi Company was established in 2013 under the commercial number (4030256672). United Cement industrial company owns the latest factory that was recently built in Saudi Arabia and in the Western Region and close to Makkah. The Production capacity is 2 million tonnes of cement annually that will meet the needs of our customers.",
             "messageFrom": "MESSAGE FROM THE ",
             "ceo": "CEO",
-            "ceoName": "Mohammad Almatrafi",
+            "ceoName": "Engr. Mohammad Almatrafi",
             "description": "United Cement Industrial Company (UCIC) proudly operates under the support of the Custodian of the Two Holy Mosques, with a concession building permit in Al Lith to produce high-quality cement that meets global standards. The company ensures an adequate fuel supply based on global performance indicators. With a strong sense of national duty, UCIC prioritizes employing and working with citizens—whether as employees, contractors, or suppliers—and boasts nearly 100% Saudi leadership since its establishment in 2013. We take pride in being platinum-ranked and in fostering development through continuous training locally and globally, believing that human resources are key to progress. Aligned with Vision 2030, UCIC focuses on efficiency and competitiveness in all technical and administrative operations. We pray for continued success to contribute to the nation's growth and development."
         },
         "section2": {
@@ -138,44 +138,46 @@
         "beforeName": "MR.",
         "members": [
             {
-                "name": "FAHED ABDULLAH ALHARBI",
+                "name": "ABDULRAHMAN HAMEED ALAWFI",
                 "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
-            },
-            {
-                "name": "ABDULKARIM IBRAHIM ALNAFEA",
-                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-1.png"
             },
             {
                 "name": "NASER ABDULLAH ALAWFI",
                 "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-2.png"
             },
             {
-                "name": "ABDULRAHMAN HAMEED ALAWFI",
-                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "name": "FAHED ABDULLAH ALHARBI",
+                "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-3.png"
             },
             {
                 "name": "YAZED MOHAMMED ALTWYJRI",
-                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-4.png"
             },
             {
-                "name": "SULAIMAN BIN DARI RASHID",
+                "name": "ABDULKARIM IBRAHIM ALNAFEA",
                 "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-5.png"
             },
             {
                 "name": "FAYEZ ABDULLAH ALHARBI",
-                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
-                "email": "drewcano@gmail.com"
+                "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-6.png"
             },
             {
                 "name": "MOHAMMAD ALMATRAFI",
                 "designation": "CEO",
-                "email": "drewcano@gmail.com"
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-7.png"
             }
         ]
     },

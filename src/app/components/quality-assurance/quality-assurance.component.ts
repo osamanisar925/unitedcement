@@ -70,6 +70,26 @@ export class QualityAssuranceComponent {
     {
       header: 'شهادة ممارسة اجهزة القياس النووية',
       imageUrl: 'assets/images/quality-assurance/certificate_14.jpg'
+    },
+    {
+      header: 'Management system as per EN ISO 9001:2015',
+      imageUrl: 'assets/images/quality-assurance/certificate_15.jpg'
+    },
+    {
+      header: 'Management system as per EN ISO 14001:2015',
+      imageUrl: 'assets/images/quality-assurance/certificate_16.jpg'
+    },
+    {
+      header: 'Management system as per EN ISO 45001:2018',
+      imageUrl: 'assets/images/quality-assurance/certificate_17.jpg'
+    },
+    {
+      header: 'License for use of the quality mark',
+      imageUrl: 'assets/images/quality-assurance/certificate_18.jpg'
+    },
+    {
+      header: 'Apendix (License for use of the quality mark)',
+      imageUrl: 'assets/images/quality-assurance/certificate_19.jpg'
     }
   ];
 
