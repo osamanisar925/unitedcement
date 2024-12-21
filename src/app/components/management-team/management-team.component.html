@@ -4,10 +4,10 @@
 
 <section class="management-team">
   <div class="container">
-    <div class="row direction-ltr">
+    <div class="row direction-ltr justify-content-end">
       <div class="col-xl-4 col-md-6 mb-5" *ngFor="let member of ('boardMembers.members' | translate)">
         <div class="card mx-4 rounded-3 overflow-hidden h-100">
-          <img src="{{member.imgSrc}}" width="200" class="img-fluid m-auto" alt="...">
+          <img src="{{member.imgSrc}}" width="200" class="img-fluid m-auto mt-1" alt="...">
           <div class="card-body text-center">
             <h4 class="card-title fw-semibold"><span class="fw-light" *ngIf="member.designation != 'CEO' && member.designation != 'الرئيس التنفيذي'">{{'boardMembers.beforeName' | translate}}</span>
               {{member.name}}</h4>

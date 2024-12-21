@@ -174,10 +174,16 @@
                 "imgSrc": "assets/images/board-members/member-6.png"
             },
             {
+                "name": "RAKAN FAHAD AL-HARBI",
+                "designation": "MEMBER OF THE BOARD OF DIRECTORS",
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-7.png"
+            },
+            {
                 "name": "MOHAMMAD ALMATRAFI",
                 "designation": "CEO",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-7.png"
+                "imgSrc": "assets/images/board-members/member-8.png"
             }
         ]
     },
@@ -382,8 +388,15 @@
             "vendors": "Vendors",
             "news": "News",
             "career": "Career",
+            "offers": "Offers"
+        },
+        "moreLinks": {
+            "heading": "More Links",
             "contactUs": "Contact Us",
             "offers": "Offers"
+        },
+        "socialLinks": {
+            "heading": "Social"
         },
         "ourPorfolio": "Our Portfolio"
     }

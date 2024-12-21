@@ -174,10 +174,16 @@
                 "imgSrc": "assets/images/board-members/member-6.png"
             },
             {
+                "name": "راكان فهد الحربي",
+                "designation": "عضو مجلس الإدارة",
+                "email": "drewcano@gmail.com",
+                "imgSrc": "assets/images/board-members/member-7.png"
+            },
+            {
                 "name": "محمد دخيل الله المطرفي",
                 "designation": "الرئيس التنفيذي",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-7.png"
+                "imgSrc": "assets/images/board-members/member-8.png"
             }
         ]
     },
@@ -381,9 +387,15 @@
             "vendors": "أخبار",
             "qualityAssurance": "ضمان الجودة",
             "news": "المنتجات",
-            "career": "التوظيف",
-            "contactUs": "اتصل بنا",
-            "offers": "اتصل بنا"
+            "career": "التوظيف"
+        },
+        "moreLinks": {
+            "heading": "المزيد من الروابط",
+            "offers": "اتصل بنا",
+            "contactUs": "اتصل بنا"
+        },
+        "socialLinks": {
+            "heading": "اجتماعي"
         },
         "ourPorfolio": "لدينا محفظة"
     }

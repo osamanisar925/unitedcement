@@ -94,7 +94,7 @@ export class QualityAssuranceComponent {
   ];
 
   openDocumentViewerModal(imgSrc: string, heading: string) {
-    const modalRef = this.modalService.open(DocumentViewerModalComponent, { size: 'xl', centered: true, backdrop: true, keyboard: true });
+    const modalRef = this.modalService.open(DocumentViewerModalComponent, { size: 'lg', centered: true, backdrop: true, keyboard: true });
     modalRef.componentInstance.imgSrc = imgSrc;
     modalRef.componentInstance.heading = heading;
   }
