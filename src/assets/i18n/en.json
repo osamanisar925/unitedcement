@@ -22,7 +22,10 @@
         },
         "news": "News",
         "career": "Career",
-        "lang": "العربية"
+        "lang":{
+            "ar":"Arabic",
+            "en":"English"
+        }
     },
     "landingPage": {
         "section1": {
@@ -138,10 +141,10 @@
         "beforeName": "MR.",
         "members": [
             {
-                "name": "ABDULRAHMAN HAMEED ALAWFI",
+                "name": "FAHED ABDULLAH ALHARBI",
                 "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-1.png"
+                "imgSrc": "assets/images/board-members/member-3.png"
             },
             {
                 "name": "NASER ABDULLAH ALAWFI",
@@ -150,16 +153,16 @@
                 "imgSrc": "assets/images/board-members/member-2.png"
             },
             {
-                "name": "FAHED ABDULLAH ALHARBI",
+                "name": "ABDULRAHMAN HAMEED ALAWFI",
                 "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-3.png"
+                "imgSrc": "assets/images/board-members/member-1.png"
             },
             {
-                "name": "YAZED MOHAMMED ALTWYJRI",
+                "name": "FAYEZ ABDULLAH ALHARBI",
                 "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-4.png"
+                "imgSrc": "assets/images/board-members/member-6.png"
             },
             {
                 "name": "ABDULKARIM IBRAHIM ALNAFEA",
@@ -168,10 +171,10 @@
                 "imgSrc": "assets/images/board-members/member-5.png"
             },
             {
-                "name": "FAYEZ ABDULLAH ALHARBI",
+                "name": "YAZED MOHAMMED ALTWYJRI",
                 "designation": "CHAIRMAN OF THE BOARD OF DIRECTORS",
                 "email": "drewcano@gmail.com",
-                "imgSrc": "assets/images/board-members/member-6.png"
+                "imgSrc": "assets/images/board-members/member-4.png"
             },
             {
                 "name": "RAKAN FAHAD AL-HARBI",

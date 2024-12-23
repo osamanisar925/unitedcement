@@ -4,21 +4,22 @@
 
 <section class="management-team">
   <div class="container">
-    <div class="row direction-ltr justify-content-end">
+    <!-- direction-ltr justify-content-end -->
+    <div class="row flex-row-reverse direction-ltr">
       <div class="col-xl-4 col-md-6 mb-5" *ngFor="let member of ('boardMembers.members' | translate)">
         <div class="card mx-4 rounded-3 overflow-hidden h-100">
-          <img src="{{member.imgSrc}}" width="200" class="img-fluid m-auto mt-1" alt="...">
+          <img src="{{member.imgSrc}}" class="img-fluid m-auto mt-4 member-picture" alt="...">
           <div class="card-body text-center">
-            <h4 class="card-title fw-semibold"><span class="fw-light" *ngIf="member.designation != 'CEO' && member.designation != 'الرئيس التنفيذي'">{{'boardMembers.beforeName' | translate}}</span>
+            <h4 class="card-title fw-semibold"><span class="fw-light">{{'boardMembers.beforeName' | translate}}</span>
               {{member.name}}</h4>
             <p class="card-text fs-small">{{member.designation}}</p>
-            <hr>
+            <!-- <hr>
             <p class="card-text">{{member.email}}</p>
             <div class="d-flex justify-content-center gap-2">
               <a><img src="assets/images/icons/facebook.png" alt=""></a>
               <a><img src="assets/images/icons/instagram.png" alt=""></a>
               <a><img src="assets/images/icons/twitter.png" alt=""></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

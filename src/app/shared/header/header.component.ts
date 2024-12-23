@@ -40,8 +40,8 @@ export class HeaderComponent {
       }
   }
 
-  translateText() {
-    const newLang = this.currentLang === 'ar' ? 'en' : 'ar';
+  translateText(newLang: string) {
+    // const newLang = this.currentLang === 'ar' ? 'en' : 'ar';
     this.translate.use(newLang);
     this.currentLang = newLang;
     this.languageService.changeLanguage(newLang); 

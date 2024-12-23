@@ -36,6 +36,16 @@ header {
 
 }
 
+.language-select-dropdown{
+    button{
+        direction: ltr;
+        padding: 4px 6px;
+    }
+    .text-language{
+        color: #505050;
+    }
+}
+
 .dropdown-full-width {
     position: static !important;
     .dropdown-menu {
