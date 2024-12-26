@@ -1,5 +1,5 @@
 <footer class=" bg-primary">
-    <div class="container position-relative">
+    <div class="container position-relative direction-ltr">
 
         <img src="assets/images/certified-logo.png" class="footer-float-img shadow">
     </div>
@@ -7,9 +7,9 @@
         <div class="row mt-5">
             <div class="col-lg-9">
                 <div class="row gy-3">
-                    <div class="col-xxl-3 col-6">
+                    <div class="col-xxl-3 col-sm-6">
                         <h5 class="text-white mb-3">{{'footer.quickLinks.heading' | translate}}</h5>
-                        <ul>
+                        <ul [ngClass]="{'arabic-arrow': currentLang === 'ar'}">
                             <li class="arrow-right"><a class="text-white"
                                     routerLink="/landing-page">{{'footer.quickLinks.home' | translate}}</a></li>
                             <!-- routerLink="/shopping" -->
@@ -29,9 +29,9 @@
                                     (click)="openComingSoon('News')">{{'footer.quickLinks.news' | translate}}</a></li>
                         </ul>
                     </div>
-                    <div class="col-xxl-3 col-6">
+                    <div class="col-xxl-3 col-sm-6">
                         <h5 class="text-white mb-3">{{'footer.moreLinks.heading' | translate}}</h5>
-                        <ul>
+                        <ul [ngClass]="{'arabic-arrow': currentLang === 'ar'}">
                             <li class="arrow-right"><a class="text-white"
                                     (click)="openComingSoon('Career')">{{'footer.quickLinks.career' | translate}}</a>
                             </li>
@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xxl-3 col-6">
+                    <div class="col-xxl-4 col-sm-6">
                         <h5 class="text-white mb-3">{{'footer.moreLinks.contactUs' | translate}}</h5>
                         <ul>
                             <li class="phone d-flex align-items-center gap-2"><a class="text-white" href="">+966 12
@@ -61,23 +61,17 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xxl-3 col-6">
+                    <div class="col-xxl-2 col-sm-6">
                         <h5 class="text-white mb-3">{{'footer.socialLinks.heading' | translate}}</h5>
                         <div class="bg-primary d-flex gap-4 ">
-                            <a href="">
+                            <a href="https://x.com/united_cement" target="_blank">
                                 <img src="assets/images/twitter-icon.png" alt="">
                             </a>
-                            <a href="">
-                                <img src="assets/images/facebook-icon.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/instagram-icon.png" alt="">
-                            </a>
-                            <a href="">
+                            <a href="https://www.youtube.com/@unitedcementindustrialcomp7673" target="_blank">
                                 <img src="assets/images/youtube-icon.png" alt="">
                             </a>
-                            <a href="">
-                                <img src="assets/images/google-icon.png" alt="">
+                            <a href="https://www.linkedin.com/company/united-cement-industrial-company/posts/?feedView=all" target="_blank">
+                                <img width="19" src="assets/images/linkdin-icon.png" alt="">
                             </a>
                         </div>
                     </div>

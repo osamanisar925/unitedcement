@@ -8,12 +8,13 @@
     // background-color: rgba(64, 73, 178, 0.68);
     overflow: hidden;
 
-    .video-text{
+    .video-text {
         font-size: 41px;
         font-weight: 800;
         letter-spacing: 2px;
         color: white;
     }
+
     .video-bg {
         position: absolute;
         top: 50%;
@@ -207,6 +208,14 @@
     .profile-image {
         width: 40px;
         height: 40px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .download-section {
+        .absolute-image {
+            right: -20px;
+        }
     }
 }
 
