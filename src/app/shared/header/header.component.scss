@@ -41,8 +41,19 @@ header {
         direction: ltr;
         padding: 4px 6px;
     }
+    &.language-select-dropdown-mobile{
+        button{
+            padding: 2px 4px;
+        }
+    }
     .text-language{
         color: #505050;
+    }
+    .mobile-arrow{
+        width: 10px;
+    }
+    .mobile-country{
+        width: 28px;
     }
 }
 
@@ -109,7 +120,7 @@ header {
 @media screen and (max-width:1200px) {
     header {
         .navbar-nav {
-            gap: 1rem;
+            gap: 5px;
         }
     }
 }

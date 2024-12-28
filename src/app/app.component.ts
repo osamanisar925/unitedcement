@@ -14,7 +14,7 @@ import { LanguageService } from './shared/services/language/language.service';
 })
 export class AppComponent {
   title = 'unitedcement';
-  currentLang: string = localStorage.getItem('lang') ?? 'en';
+  currentLang: string = '';
   languageService = inject(LanguageService);
 
   constructor() {

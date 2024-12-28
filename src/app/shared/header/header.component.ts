@@ -15,7 +15,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent {
   translate: TranslateService = inject(TranslateService);
-  currentLang = localStorage.getItem('lang') ?? this.translate.currentLang;
+  currentLang = localStorage.getItem('lang') ?? 'ar';
   languageService = inject(LanguageService);
   private readonly modalService = inject(NgbModal)
   private readonly router = inject(Router);
