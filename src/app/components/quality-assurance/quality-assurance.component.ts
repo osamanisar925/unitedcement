@@ -16,22 +16,6 @@ export class QualityAssuranceComponent {
   
   cards = [
     {
-      header: 'الترخيص الصناعي وطني',
-      imageUrl: 'assets/images/quality-assurance/certificate_1.jpg'
-    },
-    {
-      header: 'السجل التجاري',
-      imageUrl: 'assets/images/quality-assurance/certificate_2.jpg'
-    },
-    {
-      header: 'تقييم الكيان ( نطاق الشركة )',
-      imageUrl: 'assets/images/quality-assurance/certificate_3.jpg'
-    },
-    {
-      header: 'تقييم الكيان ( نطاق الشركة )',
-      imageUrl: 'assets/images/quality-assurance/certificate_4.jpg'
-    },
-    {
       header: 'رخصة بيئة التشغيل ( استغلال خلم الرخام )',
       imageUrl: 'assets/images/quality-assurance/certificate_5.jpg'
     },

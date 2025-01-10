@@ -1,5 +1,5 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withHashLocation, withRouterConfig } from '@angular/router';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
@@ -12,6 +12,7 @@ const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: Http
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes, withHashLocation(), withRouterConfig({ onSameUrlNavigation: 'reload' })),
     importProvidersFrom([TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -21,7 +22,6 @@ export const appConfig: ApplicationConfig = {
       defaultLanguage: 'ar',
     })
     ]),
-    provideRouter(routes),
     provideHttpClient(withInterceptorsFromDi()),
   ]
 };
