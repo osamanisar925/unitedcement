@@ -22,9 +22,9 @@
         },
         "news": "News",
         "career": "Career",
-        "lang":{
-            "ar":"Arabic",
-            "en":"English"
+        "lang": {
+            "ar": "Arabic",
+            "en": "English"
         }
     },
     "landingPage": {
@@ -64,7 +64,8 @@
         },
         "section4": {
             "title": "NEWS",
-            "description": "UCIC decided to select the best machinaries with high quality and safety. thus, all major equipments are european origin. The whole plant is operated from one control room an auto mode without human intervention except in rare cases"
+            "description": "UCIC decided to select the best machinaries with high quality and safety. thus, all major equipments are european origin. The whole plant is operated from one control room an auto mode without human intervention except in rare cases",
+            "viewAllBtn":"View All"
         },
         "section5": {
             "title": "United Cement Mobile APPS"
