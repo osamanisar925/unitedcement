@@ -2,16 +2,57 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
-    border-radius: 50px;
-    box-shadow: 2px 2px 3px #999;
     z-index: 100;
+
+    svg {
+        
+        transition: all .5s;
+        box-shadow: 2px 2px 3px #999;
+        border-radius: 50px;
+    }
+
+    .custom-popover {
+        background: #fff;
+        border: 1px solid #00e676;
+        border-radius: 8px;
+        box-shadow: 0 8px 12px rgba(10, 144, 79, .12);
+        color: #070b0f;
+        font-size: 14px;
+        min-width: 200px;
+        opacity: 0;
+        padding: 12px 16px;
+        transition: all .5s;
+        position: absolute;
+        right: calc(100% + 14px);
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 500;
+        visibility: hidden;
+
+        .whatsapp-text {
+            color: #00E676;
+        }
+
+    }
+
+    &:hover {
+        .custom-popover {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        svg {
+            transform: scale(1.2);
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .float {
         bottom: 20px;
         right: 20px;
-        svg{
+
+        svg {
             width: 47px;
             height: 47px;
         }
