@@ -8,6 +8,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { QualityAssuranceComponent } from './components/quality-assurance/quality-assurance.component';
 import { VendorsComponent } from './components/vendors/vendors.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { NewsComponent } from './components/news/news.component';
+import { CareerComponent } from './components/career/career.component';
 
 export const routes: Routes = [
     { path: 'landing-page', component: LandingPageComponent },
@@ -19,6 +21,8 @@ export const routes: Routes = [
     { path: 'quality-assurance', component: QualityAssuranceComponent },
     { path: 'coming-soon', component: ComingSoonComponent },
     { path: 'vendors', component: VendorsComponent },
+    { path: 'news', component: NewsComponent },
+    { path: 'career', component: CareerComponent },
     {
         path: 'shopping',
         loadChildren: () => import('./modules/shopping/shopping.module').then(m => m.ShoppingModule)

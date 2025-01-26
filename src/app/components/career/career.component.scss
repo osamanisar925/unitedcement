@@ -1,0 +1,109 @@
+@import "../../../styles/variables";
+
+.shop-banner {
+    position: relative;
+}
+
+.shop-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 84, 178, 0.6);
+    /* Overlay color */
+    z-index: 0;
+    /* Ensure overlay appears above the background image */
+}
+
+.custom-input-group {
+    height: 60px;
+
+    .form-control {
+        height: 100%;
+
+        &.position {
+            position: relative;
+            border-top-left-radius: 46px;
+            border-bottom-left-radius: 46px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+        }
+    }
+
+    button {
+        min-width: 156px;
+        border-top-right-radius: 46px;
+        border-bottom-right-radius: 46px;
+    }
+}
+
+.form-select, .form-control[type = "date"] {
+    color: #14141480;
+}
+.form-check-input:checked{
+    background-color: $primary;
+}
+.posted-job{
+
+    img.logo{
+        max-width: 72px;
+        height: fit-content;
+    }
+}
+.badge-purple {
+    font-weight: 500;
+    font-size: 12px;
+    color: #7D5AE2;
+    background-color: #7D5AE21A;
+}
+
+.pagination-section {
+    margin-bottom: 100px;
+
+    .pagination-container {
+        border-top: 1px solid #EAECF0;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 20px;
+
+        .pagination-btn {
+            color: #667085;
+            font-size: 14px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pagination {
+            .page-item {
+                .page-link {
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 8px;
+                    color: #667085;
+
+                    &.active {
+                        background-color: #F9F5FF;
+                        color: #7F56D9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pagination-container {
+        .pagination{
+            width: 100%;
+        }
+    }
+}

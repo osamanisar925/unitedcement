@@ -189,12 +189,13 @@
                             </div>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
-                            <a class="nav-link" (click)="openComingSoon('News')">{{'headerButtons.news' |
-                                translate}}</a>
+                            <a class="nav-link" routerLink="/news" routerLinkActive="active">{{'headerButtons.news' | translate}}</a>
                         </li>
                         <li class="nav-item pt-2 pb-xl-3 pb-2">
-                            <a class="nav-link" (click)="openComingSoon('Career')">{{'headerButtons.career' |
-                                translate}}</a>
+                            <a class="nav-link"  routerLink="/career" routerLinkActive="active">{{'headerButtons.career' | translate}}</a>
+                        </li>
+                        <li class="nav-item pt-2 pb-xl-3 pb-2">
+                            <a class="nav-link"  routerLink="/contactUs" routerLinkActive="active">{{'headerButtons.contactUs' | translate}}</a>
                         </li>
                     </ul>
                 </div>

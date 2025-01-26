@@ -10,8 +10,7 @@
         </div>
     </div>
 </section>
-<section class="product_section " *ngFor="let product of ('products_page.products' | translate) let i = index"
-    [ngClass]="{'opc_product': (product.badge == 'OPC'||product.badge =='النوع الأول'), 'ppc_product': (product.badge == 'PPC' || product.badge == 'النوع الثاني'), 'src_product': (product.badge == 'SRC' || product.badge == 'النوع الثالث'), 'tfc_product': (product.badge == 'TFC' || product.badge == 'الرابع')}">
+<section class="product_section " *ngFor="let product of ('products_page.products' | translate) let i = index" [ngClass]="product.bg_class">
     <div class="container">
         <div class="d-flex align-items-center flex-column mb-5">
             <div class="badge rounded-pill">

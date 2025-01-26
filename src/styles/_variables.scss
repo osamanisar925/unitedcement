@@ -16,6 +16,7 @@ $link-color: $primary;
 $gray: #89898A;
 $gray-2: #909090;
 $white: #ffffff;
+$purple: #6941C6;
 
 $border-radius-lg: 20px;
 
@@ -43,7 +44,8 @@ $theme-colors: (
     "danger": $danger,
     "light": $light,
     "dark": $dark,
-    "gray": $gray
+    "gray": $gray,
+    "purple": $purple
 );
 $container-max-widths: (
     sm: 540px,

@@ -27,6 +27,7 @@
         },
         "news": "News",
         "career": "Career",
+        "contactUs": "Contact Us",
         "lang": {
             "ar": "Arabic",
             "en": "English"
@@ -298,6 +299,7 @@
         },
         "products": [
             {
+                "bg_class": "opc_product",
                 "badge": "OPC",
                 "title": "Ordinary Portland Cement",
                 "description": "Portland cement (often referred to as OPC, from Ordinary Portland Cement) is the most common type of cement in general use around the world,",
@@ -315,6 +317,7 @@
                 "exampleLabel": "Example of use:"
             },
             {
+                "bg_class": "ppc_product",
                 "badge": "PPC",
                 "title": "Portland Pozzolana Cement",
                 "description": "Portland Pozzolana Cement is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.",
@@ -343,6 +346,7 @@
                 "characteristicsLabel": "The characteristics and advantages:"
             },
             {
+                "bg_class": "src_product",
                 "badge": "SRC",
                 "title": "Sulphate Resistant Cement",
                 "description": "Sulphate Resisting Portland Cement is a type of Portland cement in which the amount of Tricalcium aluminate (C3A) is restricted to lower than 5 % and (2 C3A + C4AF) is lower than 25%.",
@@ -358,6 +362,7 @@
                 "exampleLabel": "Example of use:"
             },
             {
+                "bg_class": "tfc_product",
                 "badge": "TFC",
                 "title": "Tameer Finishing Cement",
                 "description": "TAMEER FINISHING CEMENT (TFC) is a kind of Blended Cement which is produced by inter-grinding of OPC clinker along with gypsum and pozzolanic materials in certain proportions.",
