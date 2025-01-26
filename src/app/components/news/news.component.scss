@@ -1,19 +1,4 @@
-.shop-banner {
-    position: relative;
-}
 
-.shop-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(64, 84, 178, 0.6);
-    /* Overlay color */
-    z-index: 0;
-    /* Ensure overlay appears above the background image */
-}
 
 .custom-input-group {
     height: 60px;

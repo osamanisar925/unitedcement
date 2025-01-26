@@ -1,24 +1,9 @@
 @import "../../../styles/variables";
 
-.shop-banner {
-    position: relative;
-}
 
-.shop-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(64, 84, 178, 0.6);
-    /* Overlay color */
-    z-index: 0;
-    /* Ensure overlay appears above the background image */
-}
 
 .custom-input-group {
-    height: 60px;
+    min-height: 60px;
     direction: ltr;
 
     .form-control {
@@ -41,19 +26,23 @@
     }
 }
 
-.form-select, .form-control[type = "date"] {
+.form-select,
+.form-control[type="date"] {
     color: #14141480;
 }
-.form-check-input:checked{
+
+.form-check-input:checked {
     background-color: $primary;
 }
-.posted-job{
 
-    img.logo{
+.posted-job {
+
+    img.logo {
         max-width: 72px;
         height: fit-content;
     }
 }
+
 .badge-purple {
     font-weight: 500;
     font-size: 12px;
@@ -103,8 +92,16 @@
 
 @media screen and (max-width: 576px) {
     .pagination-container {
-        .pagination{
+        .pagination {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-input-group {
+        .form-control, button {
+            border-radius: 46px !important;
         }
     }
 }
