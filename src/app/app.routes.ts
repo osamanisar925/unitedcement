@@ -10,6 +10,7 @@ import { VendorsComponent } from './components/vendors/vendors.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { NewsComponent } from './components/news/news.component';
 import { CareerComponent } from './components/career/career.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 export const routes: Routes = [
     { path: 'landing-page', component: LandingPageComponent },
@@ -23,6 +24,7 @@ export const routes: Routes = [
     { path: 'vendors', component: VendorsComponent },
     { path: 'news', component: NewsComponent },
     { path: 'career', component: CareerComponent },
+    { path: 'contactUs', component: ContactUsComponent },
     {
         path: 'shopping',
         loadChildren: () => import('./modules/shopping/shopping.module').then(m => m.ShoppingModule)

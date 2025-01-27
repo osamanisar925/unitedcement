@@ -17,6 +17,7 @@ $gray: #89898A;
 $gray-2: #909090;
 $white: #ffffff;
 $purple: #6941C6;
+$light-purple: #F3F5FF;
 
 $border-radius-lg: 20px;
 
@@ -45,7 +46,8 @@ $theme-colors: (
     "light": $light,
     "dark": $dark,
     "gray": $gray,
-    "purple": $purple
+    "purple": $purple,
+    "light-purple": $light-purple
 );
 $container-max-widths: (
     sm: 540px,

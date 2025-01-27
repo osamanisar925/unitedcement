@@ -1,0 +1,58 @@
+.form-control, .form-select{
+    border-color: #D0D5DD;
+}
+
+.download-section {
+    position: relative;
+    background-color: #E2E8F0;
+    padding: 50px;
+    border-radius: 40px;
+
+    .absolute-image {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 390px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1074px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .download-section {
+        .absolute-image {
+            right: -20px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .download-section {
+        padding: 40px;
+
+        .absolute-image {
+            right: 0px;
+            bottom: 0px;
+            // width: 590px;
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .download-section {
+        padding-bottom: 0px;
+
+        .absolute-image {
+            width: 100%;
+            position: relative;
+            right: -39px;
+            margin-top: 40px;
+        }
+    }
+}
